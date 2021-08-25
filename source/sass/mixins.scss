@@ -1,0 +1,10 @@
+@mixin font-cormorant {
+  font-family: "Cormorant Garamond", "Times New Roman", serif;
+  font-weight: 700;
+}
+
+@mixin reset-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}

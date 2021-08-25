@@ -1,0 +1,9 @@
+.title {
+  @include font-cormorant;
+  font-size: 34px;
+  line-height: 130%;/* or 44px */
+
+  &--blog {
+    letter-spacing: 0.03em;
+  }
+}

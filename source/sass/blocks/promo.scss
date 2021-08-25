@@ -1,0 +1,21 @@
+.promo {
+  background-color: $brown;
+  color: $white;
+}
+
+.promo h1 {
+  @include font-cormorant;
+  margin: 0;
+  font-size: 45px;
+  line-height: 130%;/* or 58px */
+  letter-spacing: 0.03em;
+}
+
+.promo p {
+  @include font-cormorant;
+  margin: 0;
+  font-style: italic;
+  font-weight: 400;
+  font-size: 38px;
+  line-height: 130%;/* or 49px */
+}

@@ -1,0 +1,8 @@
+.nav-user ul {
+  @include reset-list;
+}
+
+.nav-user__item a {
+  font-size: 14px;
+  color: inherit;
+}

@@ -1,0 +1,8 @@
+.nav ul {
+  @include reset-list;
+}
+
+.nav__item a {
+  line-height: 24px;
+  color: inherit;
+}
