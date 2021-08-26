@@ -1,0 +1,16 @@
+.blog ul {
+  @include reset-list;
+}
+
+.blog__information p:first-child {
+  font-size: 14px;
+  color: $grey;
+}
+
+.blog__information h4 {
+  @include font-cormorant;
+  margin: 0;
+  font-weight: 600;
+  font-size: 26px;
+  color: $black;
+}

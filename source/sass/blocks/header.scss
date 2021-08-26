@@ -2,3 +2,9 @@
   font-size: 14px;
   color: $grey;
 }
+
+/*@media (max-width: $width-only-tablet) {
+  .header input::placeholder {
+    display: none;
+  }
+}*/

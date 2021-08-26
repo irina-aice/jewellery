@@ -12,6 +12,11 @@
   <link rel="preload" href="fonts/cormorant-garamond-regular.woff2" as="font" crossorigin="anonymous">
   <link rel="preload" href="fonts/cormorant-garamond-semibold.woff2" as="font" crossorigin="anonymous">
   <link rel="stylesheet" href="css/style.min.css">
+
+  <script type="module">
+    document.documentElement.classList.remove('no-js');
+    document.documentElement.classList.add('js');
+  </script>
 </head>
 <body>
   <header class="header">
@@ -55,35 +60,35 @@
     </nav>
   </header>
   <main>
-    <div>
+    <div class="promo promo--catalog">
       <h1>ALL JEWELLERY</h1>
       <p>Discover picks of fashion's finest trends in our jewellery catalog</p>
     </div>
     <section>
       <h2 class="visually-hidden">Filter</h2>
-      <form action="https://echo.htmlacademy.ru/" method="get">
-        <div>
+      <form class="form" action="https://echo.htmlacademy.ru/" method="get">
+        <div class="filter">
           <h3>Product</h3>
           <ul>
-            <li>
+            <li class="filter__item">
               <label>
                 <input type="checkbox">
                 Necklaces
               </label>
             </li>
-            <li>
+            <li class="filter__item">
               <label>
                 <input type="checkbox">
                 Chokers
               </label>
             </li>
-            <li>
+            <li class="filter__item">
               <label>
                 <input type="checkbox">
                 Rings
               </label>
             </li>
-            <li>
+            <li class="filter__item">
               <label>
                 <input type="checkbox">
                 Earrings
@@ -91,16 +96,16 @@
             </li>
           </ul>
         </div>
-        <div>
+        <div class="filter">
           <h3>Material</h3>
           <ul>
-            <li>
+            <li class="filter__item">
               <label>
                 <input type="checkbox">
                 Gold
               </label>
             </li>
-            <li>
+            <li class="filter__item">
               <label>
                 <input type="checkbox">
                 Silver
@@ -108,16 +113,16 @@
             </li>
           </ul>
         </div>
-        <div>
+        <div class="filter">
           <h3>Collection</h3>
           <ul>
-            <li>
+            <li class="filter__item">
               <label>
                 <input type="checkbox">
                 Pink flamingo
               </label>
             </li>
-            <li>
+            <li class="filter__item">
               <label>
                 <input type="checkbox">
                 Dreams
@@ -125,103 +130,103 @@
             </li>
           </ul>
         </div>
-        <div>
+        <div class="filter">
           <h3>Price</h3>
           <div></div>
         </div>
-        <button type="submit">Apply</button>
-        <button type="button">Clear All</button>
+        <button class="button button--apply" type="submit">Apply</button>
+        <button class="button button--clear" type="button">Clear All</button>
       </form>
     </section>
-    <section>
+    <section class="product-catalog">
       <h2 class="visually-hidden">Jewellery catalog</h2>
       <ul>
-        <li>
-          <a>
+        <li class="product-card">
+          <a href="#">
             <img src="" alt="">
             <h4>Double pearl earrings </h4>
             <span>$ 115</span>
           </a>
         </li>
-        <li>
-          <a>
+        <li class="product-card">
+          <a href="#">
             <img src="" alt="">
             <h4>Choker with gold bead</h4>
             <span>$ 55</span>
           </a>
         </li>
-        <li>
-          <a>
+        <li class="product-card">
+          <a href="#">
             <img src="" alt="">
             <h4>Gold layered necklace</h4>
             <span>$ 155</span>
           </a>
         </li>
-        <li>
-          <a>
+        <li class="product-card">
+          <a href="#">
             <img src="" alt="">
             <h4>Blue gemstone pendant</h4>
             <span>$ 105</span>
           </a>
         </li>
-        <li>
-          <a>
+        <li class="product-card">
+          <a href="#">
             <img src="" alt="">
             <h4>Boho earrings</h4>
             <span>$ 75</span>
           </a>
         </li>
-        <li>
-          <a>
+        <li class="product-card">
+          <a href="#">
             <img src="" alt="">
             <h4>Gold bird necklace</h4>
             <span>$ 135</span>
           </a>
         </li>
-        <li>
-          <a>
+        <li class="product-card">
+          <a href="#">
             <img src="" alt="">
             <h4>Black leather choker</h4>
             <span>$ 85</span>
           </a>
         </li>
-        <li>
-          <a>
+        <li class="product-card">
+          <a href="#">
             <img src="" alt="">
             <h4>Necklace with amethyst</h4>
             <span>$ 145</span>
           </a>
         </li>
-        <li>
-          <a>
+        <li class="product-card">
+          <a href="#">
             <img src="" alt="">
             <h4>Elephant earrings</h4>
             <span>$ 95</span>
           </a>
         </li>
-        <li>
-          <a>
+        <li class="product-card">
+          <a href="#">
             <img src="" alt="">
             <h4>Threader necklace</h4>
             <span>$ 115</span>
           </a>
         </li>
-        <li>
-          <a>
+        <li class="product-card">
+          <a href="#">
             <img src="" alt="">
             <h4>Origami crane necklace</h4>
             <span>$ 105</span>
           </a>
         </li>
-        <li>
-          <a>
+        <li class="product-card">
+          <a href="#">
             <img src="" alt="">
             <h4>Marble earrings</h4>
             <span>$ 95</span>
           </a>
         </li>
       </ul>
-      <button type="button">Previous</button>
+      <button class="button" type="button">Previous</button>
       <ul>
         <li>1</li>
         <li>2</li>
@@ -229,32 +234,49 @@
         <li>4</li>
         <li>5</li>
       </ul>
-      <button type="button">Next</button>
+      <button class="button" type="button">Next</button>
     </section>
   </main>
-  <footer>
-    <div>
+  <footer class="footer">
+    <div class="footer__information">
       <h3>The good stuff in your inbox </h3>
       <p>News and updates from CH. No spam, we promise.</p>
       <label>
+        <span class="visually-hidden">E-mail</span>
         <input type="email" placeholder="Your E-mail">
       </label>
       <a href="#">Sign Up</a>
     </div>
     <div>
-      <ul>
-        <li><a href="#">Ordering & Payment</a></li>
-        <li><a href="#">Terms & Conditions</a></li>
-        <li><a href="#">Returns & Exchanges</a></li>
-        <li><a href="#">Delivery</a></li>
+      <ul class="footer__list">
+        <li>
+          <a href="#">Ordering & Payment</a>
+        </li>
+        <li>
+          <a href="#">Terms & Conditions</a>
+        </li>
+        <li>
+          <a href="#">Returns & Exchanges</a>
+        </li>
+        <li>
+          <a href="#">Delivery</a>
+        </li>
       </ul>
-      <ul>
-        <li><a href="#">About CH</a></li>
-        <li><a href="#">Stores & Hours</a></li>
-        <li><a href="#">Jobs</a></li>
-        <li><a href="#">Contact Us</a></li>
+      <ul class="footer__list">
+        <li>
+          <a href="#">About CH</a>
+        </li>
+        <li>
+          <a href="#">Stores & Hours</a>
+        </li>
+        <li>
+          <a href="#">Jobs</a>
+        </li>
+        <li>
+          <a href="#">Contact Us</a>
+        </li>
       </ul>
-      <ul>
+      <ul class="footer__list social">
         <li>
           <a href="#">
             <svg width="10" height="10"></svg>
@@ -282,27 +304,29 @@
       </ul>
     </div>
   </footer>
-  <section>
+
+
+  <section class="modal">
     <button type="button">
       <span class="visually-hidden">close</span>
     </button>
-    <h3>Log In</h3>
-    <form action="https://echo.htmlacademy.ru/" method="post">
+    <h3 class="title">Log In</h3>
+    <form class="form-modal" action="https://echo.htmlacademy.ru/" method="post">
       <ul>
-        <li>
+        <li class="form-modal__item">
           <label>
             <input type="email" placeholder="Your E-mail">
           </label>
         </li>
-        <li>
+        <li class="form-modal__item">
           <label>
             <input type="text" placeholder="Password">
           </label>
           <p>Forgot your password?</p>
         </li>
       </ul>
-      <button type="submit">Log In</button>
-      <span>
+      <button class="button button--login" type="submit">Log In</button>
+      <span class="form-modal__question">
         Don’t have an account?
         <span>
           <a href="#">Sign up</a>

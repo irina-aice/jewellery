@@ -12,6 +12,11 @@
   <link rel="preload" href="fonts/cormorant-garamond-regular-italic.woff2" as="font" crossorigin="anonymous">
   <link rel="preload" href="fonts/cormorant-garamond-semibold.woff2" as="font" crossorigin="anonymous">
   <link rel="stylesheet" href="css/style.min.css">
+
+  <script type="module">
+    document.documentElement.classList.remove('no-js');
+    document.documentElement.classList.add('js');
+  </script>
 </head>
 <body>
   <header class="header">
@@ -64,28 +69,28 @@
       <p><a href="#" class="link">Shop Now</a></p>
       <ul>
         <li class="product-card">
-          <a>
+          <a href="#">
             <img src="" alt="">
             <h4>Necklace with amethyst</h4>
             <span>$ 145</span>
           </a>
         </li>
         <li class="product-card">
-          <a>
+          <a href="#">
             <img src="" alt="">
             <h4>Layered сhoker</h4>
             <span>$ 115</span>
           </a>
         </li>
         <li class="product-card">
-          <a>
+          <a href="#">
             <img src="" alt="">
             <h4>Gold chain</h4>
             <span>$ 215</span>
           </a>
         </li>
         <li class="product-card">
-          <a>
+          <a href="#">
             <img src="" alt="">
             <h4>Galaxy earrings</h4>
             <span>$ 95</span>
@@ -107,7 +112,7 @@
         <ul>
           <li>
             <div></div>
-            <div>
+            <div class="blog__information">
               <p>September 30, 2019</p>
               <h4>How to care for your jewellery</h4>
               <p><a href="#" class="link">Read Article</a></p>
@@ -115,7 +120,7 @@
           </li>
           <li>
             <div></div>
-            <div>
+            <div class="blog__information">
               <p>September 23, 2019</p>
               <h4>Power of crystals</h4>
               <p><a href="#" class="link">Read Article</a></p>
@@ -123,7 +128,7 @@
           </li>
           <li>
             <div></div>
-            <div>
+            <div class="blog__information">
               <p>September 16, 2019</p>
               <h4>AW 19 trends</h4>
               <p><a href="#" class="link">Read Article</a></p>
@@ -132,25 +137,25 @@
         </ul>
       </div>
     </section>
-    <section>
+    <section class="questions">
       <h3>Frequently asked questions</h3>
       <ul>
-        <li>
+        <li class="questions__item">
           <h4>What materials are the jewellery made of?</h4>
           <p>Our jewellerry is made of solid gold, silver or leather. Also, some jewellery contains precious and
             semiprecious stones and crystals.</p>
         </li>
-        <li>
+        <li class="questions__item">
           <h4>Which countries do you deliver to?</h4>
           <p>Our jewellerry is made of solid gold, silver or leather. Also, some jewellery contains precious and
             semiprecious stones and crystals.</p>
         </li>
-        <li>
+        <li class="questions__item">
           <h4>What are the payment methods?</h4>
           <p>Our jewellerry is made of solid gold, silver or leather. Also, some jewellery contains precious and
             semiprecious stones and crystals.</p>
         </li>
-        <li>
+        <li class="questions__item">
           <h4>Can I return the jewellery if it didn’t fit me?</h4>
           <p>Our jewellerry is made of solid gold, silver or leather. Also, some jewellery contains precious and
             semiprecious stones and crystals.</p>
@@ -159,55 +164,72 @@
     </section>
     <section>
       <div>
-        <p>@Chjewellery</p>
-        <p><a href="#">Follow Us</a></p>
+        <p class="contacts">@Chjewellery</p>
+        <p><a href="#" class="link">Follow Us</a></p>
       </div>
       <div></div>
     </section>
   </main>
-  <footer>
-    <div>
+  <footer class="footer">
+    <div class="footer__information">
       <h3>The good stuff in your inbox </h3>
       <p>News and updates from CH. No spam, we promise.</p>
       <label>
+        <span class="visually-hidden">E-mail</span>
         <input type="email" placeholder="Your E-mail">
       </label>
       <a href="#">Sign Up</a>
     </div>
     <div>
-      <ul>
-        <li><a href="#">Ordering & Payment</a></li>
-        <li><a href="#">Terms & Conditions</a></li>
-        <li><a href="#">Returns & Exchanges</a></li>
-        <li><a href="#">Delivery</a></li>
-      </ul>
-      <ul>
-        <li><a href="#">About CH</a></li>
-        <li><a href="#">Stores & Hours</a></li>
-        <li><a href="#">Jobs</a></li>
-        <li><a href="#">Contact Us</a></li>
-      </ul>
-      <ul>
+      <ul class="footer__list">
         <li>
-          <a href="#">
+          <a href="#">Ordering & Payment</a>
+        </li>
+        <li>
+          <a href="#">Terms & Conditions</a>
+        </li>
+        <li>
+          <a href="#">Returns & Exchanges</a>
+        </li>
+        <li>
+          <a href="#">Delivery</a>
+        </li>
+      </ul>
+      <ul class="footer__list">
+        <li>
+          <a href="#">About CH</a>
+        </li>
+        <li>
+          <a href="#">Stores & Hours</a>
+        </li>
+        <li>
+          <a href="#">Jobs</a>
+        </li>
+        <li>
+          <a href="#">Contact Us</a>
+        </li>
+      </ul>
+      <ul class="footer__list social">
+        <li>
+          <a class="social__link" href="#">
             <svg width="10" height="10"></svg>
             <span>Facebook</span>
           </a>
         </li>
         <li>
-          <a href="#">
+          <a class="social__link" href="#">
             <svg width="10" height="10"></svg>
             <span>Instagram</span>
           </a>
         </li>
         <li>
-          <a href="#">
+          <a class="social__link" href="#">
             <svg width="10" height="10"></svg>
             <span>Pinterest</span>
           </a>
         </li>
         <li>
-          <a href="#">
+          <a class="social__link" href="#">
             <svg width="10" height="10"></svg>
             <span>Twitter</span>
           </a>

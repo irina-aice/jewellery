@@ -1,0 +1,21 @@
+.button {
+  font-size: inherit;
+  line-height: inherit;
+  font-weight: inherit;
+  border: 0;
+  background-color: $white;
+
+  &--apply {
+    color: $white;
+    background-color: $brown;
+  }
+
+  &--clear {
+    border: 1px solid $brown;
+  }
+
+  &--login {
+    color: $white;
+    background-color: $brown;
+  }
+}

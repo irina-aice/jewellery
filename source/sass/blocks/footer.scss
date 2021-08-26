@@ -1,0 +1,46 @@
+.footer {
+  color: $white;
+  background-color: $black;
+}
+
+.footer__information h3 {
+  @include font-cormorant;
+  margin: 0;
+  font-size: 34px;
+  letter-spacing: 0.03em;
+}
+
+.footer__information p {
+  font-weight: 400;
+  color: $grey;
+}
+
+@media (max-width: $width-only-mobile) {
+  .footer__information p {
+    line-height: 140%;
+  }
+}
+
+.footer__information input {
+  background-color: inherit;
+  border: 0;
+}
+
+.footer__information input::placeholder {
+  font-size: 14px;
+  line-height: 21px;
+  opacity: 1;
+  color: $grey;
+}
+
+.footer__information a {
+  color: inherit;
+}
+
+.footer__list {
+  @include reset-list;
+}
+
+.footer__list a {
+  color: inherit;
+}

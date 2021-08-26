@@ -1,0 +1,35 @@
+.questions h3 {
+  @include font-cormorant;
+  margin: 0;
+  font-size: 34px;
+  letter-spacing: 0.03em;
+}
+
+.questions ul {
+  @include reset-list;
+}
+
+.questions__item h4 {
+  margin: 0;
+  font-weight: 500;
+  font-size: 18px;
+}
+
+@media (max-width: $width-only-mobile) {
+  .questions__item h4 {
+    font-size: 16px;
+    line-height: 140%;
+  }
+}
+
+.questions__item p {
+  margin: 0;
+  font-weight: 400;
+}
+
+@media (max-width: $width-only-mobile) {
+  .questions__item p {
+    font-size: 14px;
+    line-height: 140%;
+  }
+}

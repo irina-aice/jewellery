@@ -7,8 +7,14 @@
   @include font-cormorant;
   margin: 0;
   font-size: 45px;
-  line-height: 130%;/* or 58px */
+  line-height: 130%; /* or 58px */
   letter-spacing: 0.03em;
+}
+
+@media (max-width: $width-only-mobile) {
+  .promo h1 {
+    font-size: 38px;
+  }
 }
 
 .promo p {
@@ -17,5 +23,26 @@
   font-style: italic;
   font-weight: 400;
   font-size: 38px;
-  line-height: 130%;/* or 49px */
+  line-height: 130%; /* or 49px */
+}
+
+@media (max-width: $width-only-mobile) {
+  .promo p {
+    font-size: 34px;
+  }
+}
+
+.promo--catalog h1 {
+  font-size: 34px;
+}
+
+.promo--catalog p {
+  font-weight: 500;
+  font-size: 22px;
+}
+
+@media (max-width: $width-only-mobile) {
+  .promo--catalog p {
+    line-height: 120%;
+  }
 }

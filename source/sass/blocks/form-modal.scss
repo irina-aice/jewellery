@@ -1,0 +1,26 @@
+.form-modal ul {
+  @include reset-list;
+}
+
+.form-modal__item input::placeholder {
+  font-size: 14px;
+  line-height: 21px;
+  color: $grey;
+  opacity: 1;
+}
+
+.form-modal__item p {
+  font-size: 12px;
+  line-height: 18px;
+  color: $grey;
+}
+
+.form-modal__question {
+  font-size: 14px;
+  line-height: 21px;
+  color: $grey;
+}
+
+.form-modal__question a {
+  color: $darker-grey;
+}
