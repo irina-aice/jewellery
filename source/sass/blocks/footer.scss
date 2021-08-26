@@ -3,6 +3,21 @@
   background-color: $black;
 }
 
+.footer__grid {
+  display: flex;
+}
+
+.footer__information {
+  width: 40%;
+}
+
+.footer__links {
+  width: 60%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
 .footer__information h3 {
   @include font-cormorant;
   margin: 0;

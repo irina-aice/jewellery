@@ -1,3 +1,9 @@
+.header__grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
 .header input::placeholder {
   font-size: 14px;
   color: $grey;

@@ -1,3 +1,14 @@
-.new-products ul {
+.new-products__list {
   @include reset-list;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-column-gap: 30px;
+  grid-row-gap: 30px;
+}
+
+.new-products__pagination {
+  @include reset-list;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }

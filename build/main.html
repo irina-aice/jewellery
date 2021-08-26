@@ -20,221 +20,237 @@
 </head>
 <body>
   <header class="header">
-    <div>
-      <label>
-        <input type="search" placeholder="Type here to search">
-      </label>
-      <svg width="10" height="10"></svg>
-      <div class="nav-user">
+    <div class="container">
+      <div class="header__grid">
+        <label>
+          <input type="search" placeholder="Type here to search">
+        </label>
+        <svg width="10" height="10"></svg>
+        <div class="nav-user">
+          <ul>
+            <li class="nav-user__item">
+              <a href="#">Login</a>
+            </li>
+            <li class="nav-user__item">
+              <a href="#">Cart 0</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <nav class="nav">
+        <button type="button">
+          <span class="visually-hidden">Open menu</span>
+        </button>
         <ul>
-          <li class="nav-user__item">
-            <a href="#">Login</a>
+          <li class="nav__item">
+            <a href="#">What’s new</a>
           </li>
-          <li class="nav-user__item">
-            <a href="#">Cart 0</a>
+          <li class="nav__item">
+            <a href="#">Chokers</a>
+          </li>
+          <li class="nav__item">
+            <a href="#">Necklaces</a>
+          </li>
+          <li class="nav__item">
+            <a href="#">Rings</a>
+          </li>
+          <li class="nav__item">
+            <a href="#">Earrings</a>
           </li>
         </ul>
-      </div>
+      </nav>
     </div>
-    <nav class="nav">
-      <button type="button">
-        <span class="visually-hidden">Open menu</span>
-      </button>
-      <ul>
-        <li class="nav__item">
-          <a href="#">What’s new</a>
-        </li>
-        <li class="nav__item">
-          <a href="#">Chokers</a>
-        </li>
-        <li class="nav__item">
-          <a href="#">Necklaces</a>
-        </li>
-        <li class="nav__item">
-          <a href="#">Rings</a>
-        </li>
-        <li class="nav__item">
-          <a href="#">Earrings</a>
-        </li>
-      </ul>
-    </nav>
   </header>
   <main class="main">
     <div class="promo">
-      <h1>PERFECTION</h1>
-      <p>made to be yours</p>
+      <div class="container">
+        <h1>PERFECTION</h1>
+        <p>made to be yours</p>
+      </div>
     </div>
     <section class="new-products">
-      <h3 class="title">New In</h3>
-      <p><a href="#" class="link">Shop Now</a></p>
-      <ul>
-        <li class="product-card">
-          <a href="#">
-            <img src="" alt="">
-            <h4>Necklace with amethyst</h4>
-            <span>$ 145</span>
-          </a>
-        </li>
-        <li class="product-card">
-          <a href="#">
-            <img src="" alt="">
-            <h4>Layered сhoker</h4>
-            <span>$ 115</span>
-          </a>
-        </li>
-        <li class="product-card">
-          <a href="#">
-            <img src="" alt="">
-            <h4>Gold chain</h4>
-            <span>$ 215</span>
-          </a>
-        </li>
-        <li class="product-card">
-          <a href="#">
-            <img src="" alt="">
-            <h4>Galaxy earrings</h4>
-            <span>$ 95</span>
-          </a>
-        </li>
-      </ul>
-      <ul>
-        <li>1</li>
-        <li>2</li>
-        <li>3</li>
-      </ul>
+      <div class="container">
+        <h3 class="title">New In</h3>
+        <p><a href="#" class="link">Shop Now</a></p>
+        <ul class="new-products__list">
+          <li class="product-card">
+            <a href="#">
+              <img src="" alt="">
+              <h4>Necklace with amethyst</h4>
+              <span>$ 145</span>
+            </a>
+          </li>
+          <li class="product-card">
+            <a href="#">
+              <img src="" alt="">
+              <h4>Layered сhoker</h4>
+              <span>$ 115</span>
+            </a>
+          </li>
+          <li class="product-card">
+            <a href="#">
+              <img src="" alt="">
+              <h4>Gold chain</h4>
+              <span>$ 215</span>
+            </a>
+          </li>
+          <li class="product-card">
+            <a href="#">
+              <img src="" alt="">
+              <h4>Galaxy earrings</h4>
+              <span>$ 95</span>
+            </a>
+          </li>
+        </ul>
+        <ul class="new-products__pagination">
+          <li>1</li>
+          <li>2</li>
+          <li>3</li>
+        </ul>
+      </div>
     </section>
     <section class="blog">
-      <h3 class="title title--blog">Blog</h3>
-      <p>
-        <a href="#" class="link">Read All</a>
-      </p>
-      <div>
+      <div class="container">
+        <h3 class="title title--blog">Blog</h3>
+        <p>
+          <a href="#" class="link">Read All</a>
+        </p>
+        <div>
+          <ul class="blog__list">
+            <li>
+              <div></div>
+              <div class="blog__information">
+                <p>September 30, 2019</p>
+                <h4>How to care for your jewellery</h4>
+                <p><a href="#" class="link">Read Article</a></p>
+              </div>
+            </li>
+            <li>
+              <div></div>
+              <div class="blog__information">
+                <p>September 23, 2019</p>
+                <h4>Power of crystals</h4>
+                <p><a href="#" class="link">Read Article</a></p>
+              </div>
+            </li>
+            <li>
+              <div></div>
+              <div class="blog__information">
+                <p>September 16, 2019</p>
+                <h4>AW 19 trends</h4>
+                <p><a href="#" class="link">Read Article</a></p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <section class="questions">
+      <div class="container container--questions">
+        <h3>Frequently asked questions</h3>
         <ul>
-          <li>
-            <div></div>
-            <div class="blog__information">
-              <p>September 30, 2019</p>
-              <h4>How to care for your jewellery</h4>
-              <p><a href="#" class="link">Read Article</a></p>
-            </div>
+          <li class="questions__item">
+            <h4>What materials are the jewellery made of?</h4>
+            <p>Our jewellerry is made of solid gold, silver or leather. Also, some jewellery contains precious and
+              semiprecious stones and crystals.</p>
           </li>
-          <li>
-            <div></div>
-            <div class="blog__information">
-              <p>September 23, 2019</p>
-              <h4>Power of crystals</h4>
-              <p><a href="#" class="link">Read Article</a></p>
-            </div>
+          <li class="questions__item">
+            <h4>Which countries do you deliver to?</h4>
+            <p>Our jewellerry is made of solid gold, silver or leather. Also, some jewellery contains precious and
+              semiprecious stones and crystals.</p>
           </li>
-          <li>
-            <div></div>
-            <div class="blog__information">
-              <p>September 16, 2019</p>
-              <h4>AW 19 trends</h4>
-              <p><a href="#" class="link">Read Article</a></p>
-            </div>
+          <li class="questions__item">
+            <h4>What are the payment methods?</h4>
+            <p>Our jewellerry is made of solid gold, silver or leather. Also, some jewellery contains precious and
+              semiprecious stones and crystals.</p>
+          </li>
+          <li class="questions__item">
+            <h4>Can I return the jewellery if it didn’t fit me?</h4>
+            <p>Our jewellerry is made of solid gold, silver or leather. Also, some jewellery contains precious and
+              semiprecious stones and crystals.</p>
           </li>
         </ul>
       </div>
     </section>
-    <section class="questions">
-      <h3>Frequently asked questions</h3>
-      <ul>
-        <li class="questions__item">
-          <h4>What materials are the jewellery made of?</h4>
-          <p>Our jewellerry is made of solid gold, silver or leather. Also, some jewellery contains precious and
-            semiprecious stones and crystals.</p>
-        </li>
-        <li class="questions__item">
-          <h4>Which countries do you deliver to?</h4>
-          <p>Our jewellerry is made of solid gold, silver or leather. Also, some jewellery contains precious and
-            semiprecious stones and crystals.</p>
-        </li>
-        <li class="questions__item">
-          <h4>What are the payment methods?</h4>
-          <p>Our jewellerry is made of solid gold, silver or leather. Also, some jewellery contains precious and
-            semiprecious stones and crystals.</p>
-        </li>
-        <li class="questions__item">
-          <h4>Can I return the jewellery if it didn’t fit me?</h4>
-          <p>Our jewellerry is made of solid gold, silver or leather. Also, some jewellery contains precious and
-            semiprecious stones and crystals.</p>
-        </li>
-      </ul>
-    </section>
     <section>
-      <div>
-        <p class="contacts">@Chjewellery</p>
-        <p><a href="#" class="link">Follow Us</a></p>
+      <div class="container">
+        <div>
+          <p class="contacts">@Chjewellery</p>
+          <p><a href="#" class="link">Follow Us</a></p>
+        </div>
+        <div></div>
       </div>
-      <div></div>
     </section>
   </main>
   <footer class="footer">
-    <div class="footer__information">
-      <h3>The good stuff in your inbox </h3>
-      <p>News and updates from CH. No spam, we promise.</p>
-      <label>
-        <span class="visually-hidden">E-mail</span>
-        <input type="email" placeholder="Your E-mail">
-      </label>
-      <a href="#">Sign Up</a>
-    </div>
-    <div>
-      <ul class="footer__list">
-        <li>
-          <a href="#">Ordering & Payment</a>
-        </li>
-        <li>
-          <a href="#">Terms & Conditions</a>
-        </li>
-        <li>
-          <a href="#">Returns & Exchanges</a>
-        </li>
-        <li>
-          <a href="#">Delivery</a>
-        </li>
-      </ul>
-      <ul class="footer__list">
-        <li>
-          <a href="#">About CH</a>
-        </li>
-        <li>
-          <a href="#">Stores & Hours</a>
-        </li>
-        <li>
-          <a href="#">Jobs</a>
-        </li>
-        <li>
-          <a href="#">Contact Us</a>
-        </li>
-      </ul>
-      <ul class="footer__list social">
-        <li>
-          <a class="social__link" href="#">
-            <svg width="10" height="10"></svg>
-            <span>Facebook</span>
-          </a>
-        </li>
-        <li>
-          <a class="social__link" href="#">
-            <svg width="10" height="10"></svg>
-            <span>Instagram</span>
-          </a>
-        </li>
-        <li>
-          <a class="social__link" href="#">
-            <svg width="10" height="10"></svg>
-            <span>Pinterest</span>
-          </a>
-        </li>
-        <li>
-          <a class="social__link" href="#">
-            <svg width="10" height="10"></svg>
-            <span>Twitter</span>
-          </a>
-        </li>
-      </ul>
+    <div class="container">
+      <div class="footer__grid">
+        <div class="footer__information">
+          <h3>The good stuff in your inbox </h3>
+          <p>News and updates from CH. No spam, we promise.</p>
+          <label>
+            <span class="visually-hidden">E-mail</span>
+            <input type="email" placeholder="Your E-mail">
+          </label>
+          <a href="#">Sign Up</a>
+        </div>
+        <div class="footer__links">
+          <ul class="footer__list">
+            <li>
+              <a href="#">Ordering & Payment</a>
+            </li>
+            <li>
+              <a href="#">Terms & Conditions</a>
+            </li>
+            <li>
+              <a href="#">Returns & Exchanges</a>
+            </li>
+            <li>
+              <a href="#">Delivery</a>
+            </li>
+          </ul>
+          <ul class="footer__list">
+            <li>
+              <a href="#">About CH</a>
+            </li>
+            <li>
+              <a href="#">Stores & Hours</a>
+            </li>
+            <li>
+              <a href="#">Jobs</a>
+            </li>
+            <li>
+              <a href="#">Contact Us</a>
+            </li>
+          </ul>
+          <ul class="footer__list social">
+            <li>
+              <a class="social__link" href="#">
+                <svg width="10" height="10"></svg>
+                <span>Facebook</span>
+              </a>
+            </li>
+            <li>
+              <a class="social__link" href="#">
+                <svg width="10" height="10"></svg>
+                <span>Instagram</span>
+              </a>
+            </li>
+            <li>
+              <a class="social__link" href="#">
+                <svg width="10" height="10"></svg>
+                <span>Pinterest</span>
+              </a>
+            </li>
+            <li>
+              <a class="social__link" href="#">
+                <svg width="10" height="10"></svg>
+                <span>Twitter</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
     </div>
   </footer>
 

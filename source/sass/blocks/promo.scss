@@ -1,6 +1,11 @@
 .promo {
+  min-height: 463px;
   background-color: $brown;
   color: $white;
+
+  &--catalog {
+    min-height: 261px;
+  }
 }
 
 .promo h1 {

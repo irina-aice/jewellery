@@ -1,5 +1,8 @@
 .nav-user ul {
   @include reset-list;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 
 .nav-user__item a {

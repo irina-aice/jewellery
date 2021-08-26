@@ -1,0 +1,19 @@
+.container {
+  width: 100%;
+  max-width: 1170px;
+  margin: 0 auto;
+
+  &--questions {
+    max-width: 970px;
+  }
+
+  @media (max-width: $width-only-tablet) {
+    padding-left: 45px;
+    padding-right: 45px;
+  }
+
+  @media (max-width: $width-only-mobile) {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
