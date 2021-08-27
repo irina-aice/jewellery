@@ -20,50 +20,59 @@
 </head>
 <body>
   <header class="header">
-    <div class="container">
-      <div class="header__grid">
-        <label>
-          <input type="search" placeholder="Type here to search">
-        </label>
-        <svg width="10" height="10"></svg>
-        <div class="nav-user">
-          <ul>
-            <li class="nav-user__item">
-              <a href="#">Login</a>
-            </li>
-            <li class="nav-user__item">
-              <a href="#">Cart 0</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-      <nav class="nav">
-        <button type="button">
-          <span class="visually-hidden">Open menu</span>
-        </button>
+    <div class="header__grid">
+      <label>
+        <input type="search" placeholder="Type here to search">
+      </label>
+      <svg width="10" height="10"></svg>
+      <div class="nav-user">
         <ul>
-          <li class="nav__item">
-            <a href="#">What’s new</a>
+          <li class="nav-user__item">
+            <a href="#">Login</a>
           </li>
-          <li class="nav__item">
-            <a href="#">Chokers</a>
-          </li>
-          <li class="nav__item">
-            <a href="#">Necklaces</a>
-          </li>
-          <li class="nav__item">
-            <a href="#">Rings</a>
-          </li>
-          <li class="nav__item">
-            <a href="#">Earrings</a>
+          <li class="nav-user__item">
+            <a href="#">Cart 0</a>
           </li>
         </ul>
-      </nav>
+      </div>
     </div>
+    <nav class="nav">
+      <button type="button">
+        <span class="visually-hidden">Open menu</span>
+      </button>
+      <ul class="nav__list">
+        <li class="nav__item">
+          <a href="#">What’s new</a>
+        </li>
+        <li class="nav__item">
+          <a href="#">Chokers</a>
+        </li>
+        <li class="nav__item">
+          <a href="#">Necklaces</a>
+        </li>
+        <li class="nav__item">
+          <a href="#">Rings</a>
+        </li>
+        <li class="nav__item">
+          <a href="#">Earrings</a>
+        </li>
+      </ul>
+      <ul class="nav__list-extra">
+        <li>
+          <a href="#">About CH</a>
+        </li>
+        <li>
+          <a href="#">Stores & Hours</a>
+        </li>
+        <li>
+          <a href="#">Contact Us</a>
+        </li>
+      </ul>
+    </nav>
   </header>
   <main>
     <div class="promo promo--catalog">
-      <div class="container">
+      <div class="container container--grid container--catalog">
         <h1>ALL JEWELLERY</h1>
         <p>Discover picks of fashion's finest trends in our jewellery catalog</p>
       </div>
@@ -251,11 +260,11 @@
         <div class="footer__information">
           <h3>The good stuff in your inbox </h3>
           <p>News and updates from CH. No spam, we promise.</p>
-          <label>
-            <span class="visually-hidden">E-mail</span>
-            <input type="email" placeholder="Your E-mail">
-          </label>
-          <a href="#">Sign Up</a>
+          <div class="footer__input">
+            <label class="visually-hidden" for="mail">E-mail</label>
+            <input id="mail" type="email" placeholder="Your E-mail">
+            <a href="#">Sign Up</a>
+          </div>
         </div>
         <div class="footer__links">
           <ul class="footer__list">

@@ -1,4 +1,6 @@
 .footer {
+  padding-top: 100px;
+  padding-bottom: 100px;
   color: $white;
   background-color: $black;
 }
@@ -7,8 +9,20 @@
   display: flex;
 }
 
+@media (max-width: $width-only-tablet) {
+  .footer__grid {
+    flex-direction: column;
+  }
+}
+
 .footer__information {
   width: 40%;
+}
+
+@media (max-width: $width-only-tablet) {
+  .footer__information {
+    width: 100%;
+  }
 }
 
 .footer__links {
@@ -16,6 +30,18 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+}
+
+@media (max-width: $width-only-tablet) {
+  .footer__links {
+    width: 100%;
+  }
+}
+
+@media (max-width: $width-only-mobile) {
+  .footer__links {
+    flex-direction: column;
+  }
 }
 
 .footer__information h3 {
@@ -36,19 +62,23 @@
   }
 }
 
-.footer__information input {
+.footer__input {
+  border-bottom: 1px solid $white;
+}
+
+.footer__input input {
   background-color: inherit;
   border: 0;
 }
 
-.footer__information input::placeholder {
+.footer__input input::placeholder {
   font-size: 14px;
   line-height: 21px;
   opacity: 1;
   color: $grey;
 }
 
-.footer__information a {
+.footer__input a {
   color: inherit;
 }
 

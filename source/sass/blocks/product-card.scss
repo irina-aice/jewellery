@@ -2,12 +2,17 @@
   color: inherit;
 }
 
+.product-card__information {
+  text-align: center;
+}
+
 .product-card h4 {
   margin: 0;
   font-weight: 500;
 }
 
 .product-card span {
+  display: inline-block;
   font-weight: 700;
   font-size: 14px;
   line-height: 130%;/* or 18px */

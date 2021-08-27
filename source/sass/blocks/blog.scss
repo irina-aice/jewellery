@@ -1,3 +1,7 @@
+.blog {
+  @include container;
+}
+
 .blog__list {
   @include reset-list;
   display: grid;
@@ -5,6 +9,17 @@
   grid-template-rows: repeat(2, 1fr);
   grid-column-gap: 30px;
   grid-row-gap: 30px;
+}
+
+@media (max-width: $width-only-tablet) {
+  .blog__list {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, 1fr);
+  }
+}
+
+.blog__list li {
+  min-height: 300px;
 }
 
 .blog__list li:nth-child(3n+1) {
@@ -26,6 +41,90 @@
   grid-column-end: 3;
   grid-row-start: 1;
   grid-row-end: 3;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+}
+
+@media (max-width: $width-only-tablet) {
+  .blog__list li:nth-child(3n+3) {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 3;
+    grid-row-end: 4;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+  }
+}
+
+.blog__list li:nth-child(3n+1),
+.blog__list li:nth-child(3n+2) {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+@media (max-width: $width-only-mobile) {
+  .blog__list li:nth-child(3n+1),
+  .blog__list li:nth-child(3n+2),
+  .blog__list li:nth-child(3n+3) {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(2, 1fr);
+  }
+}
+
+.blog__image {
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.blog__image--care {
+  background-image: url("../img/blog-care-desktop.jpg");
+}
+
+.blog__image--power {
+  background-image: url("../img/blog-power-desktop.jpg");
+}
+
+.blog__image--trends {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 1;
+  grid-row-end: 3;
+  background-image: url("../img/blog-trends-desktop.jpg");
+}
+
+.blog__information {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: $beige;
+
+  &--trends {
+    z-index: 1;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 3;
+  }
+}
+
+@media (max-width: $width-only-tablet) {
+  .blog__information--trends {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2;
+  }
+}
+
+@media (max-width: $width-only-mobile) {
+  .blog__information {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 3;
+  }
 }
 
 .blog__information p:first-child {

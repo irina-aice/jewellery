@@ -1,3 +1,8 @@
+.questions {
+  @include container;
+  max-width: 970px;
+}
+
 .questions h3 {
   @include font-cormorant;
   margin: 0;
@@ -7,6 +12,16 @@
 
 .questions ul {
   @include reset-list;
+}
+
+.questions ul:last-child {
+  border-bottom: 1px solid $brown;
+}
+
+.questions__item {
+  border-top: 1px solid $brown;
+  border-left: 1px solid $brown;
+  border-right: 1px solid $brown;
 }
 
 .questions__item h4 {

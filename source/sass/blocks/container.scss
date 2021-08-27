@@ -1,19 +1,21 @@
 .container {
-  width: 100%;
-  max-width: 1170px;
-  margin: 0 auto;
+  @include container;
 
-  &--questions {
-    max-width: 970px;
+  &--catalog {
+    min-height: 261px;
   }
 
-  @media (max-width: $width-only-tablet) {
-    padding-left: 45px;
-    padding-right: 45px;
+  &--grid {
+    min-height: 463px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
+}
 
-  @media (max-width: $width-only-mobile) {
-    padding-left: 15px;
-    padding-right: 15px;
+@media (max-width: $width-only-mobile) {
+  .container--catalog p {
+    text-align: center;
   }
 }

@@ -1,12 +1,35 @@
+.header {
+  @include container;
+}
+
+@media (max-width: $width-only-tablet) {
+  .header {
+    background-color: $brown;
+    color: $white;
+  }
+}
+
 .header__grid {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
 }
 
+.header input {
+  border: 0;
+}
+
 .header input::placeholder {
   font-size: 14px;
   color: $grey;
+}
+
+@media (max-width: $width-only-tablet) {
+  .header input {
+    background-color: $light-white;
+    border-radius: 21px;
+    border: 0;
+  }
 }
 
 /*@media (max-width: $width-only-tablet) {

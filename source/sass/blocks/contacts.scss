@@ -1,4 +1,12 @@
 .contacts {
+  @include container;
+}
+
+.contacts div {
+  text-align: center;
+}
+
+.contacts__social {
   @include font-cormorant;
   margin: 0;
   font-size: 34px;

@@ -1,15 +1,29 @@
 .promo {
-  min-height: 463px;
   background-color: $brown;
   color: $white;
+}
 
-  &--catalog {
-    min-height: 261px;
-  }
+.promo__image {
+  max-width: 1366px;
+  margin: 0 auto;
+  position: relative;
+  background-image: url("../img/main-promo-desctop.jpg");
+  background-repeat: no-repeat;
+}
+
+.promo__image::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: $dark-brown;
 }
 
 .promo h1 {
   @include font-cormorant;
+  z-index: 1;
   margin: 0;
   font-size: 45px;
   line-height: 130%; /* or 58px */
@@ -24,6 +38,7 @@
 
 .promo p {
   @include font-cormorant;
+  z-index: 1;
   margin: 0;
   font-style: italic;
   font-weight: 400;

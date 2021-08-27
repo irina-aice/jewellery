@@ -1,9 +1,19 @@
+.new-products {
+  @include container;
+}
+
 .new-products__list {
   @include reset-list;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-column-gap: 30px;
   grid-row-gap: 30px;
+}
+
+@media (max-width: $width-only-tablet) {
+  .new-products__list {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
 .new-products__pagination {
