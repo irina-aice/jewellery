@@ -6,12 +6,12 @@
   text-align: center;
 }
 
-.product-card h4 {
-  margin: 0;
+.product-card__information h4 {
+  margin: 0 0 15px 0;
   font-weight: 500;
 }
 
-.product-card span {
+.product-card__information span {
   display: inline-block;
   font-weight: 700;
   font-size: 14px;

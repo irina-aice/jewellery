@@ -21,13 +21,16 @@
 <body>
   <header class="header">
     <div class="header__grid">
+      <button class="header__button" type="button">
+        <span class="visually-hidden">Open menu</span>
+      </button>
       <label>
         <input type="search" placeholder="Type here to search">
       </label>
       <svg width="10" height="10"></svg>
       <div class="nav-user">
         <ul>
-          <li class="nav-user__item">
+          <li class="nav-user__item nav-user__item--login">
             <a href="#">Login</a>
           </li>
           <li class="nav-user__item">
@@ -36,43 +39,47 @@
         </ul>
       </div>
     </div>
-    <nav class="nav">
-      <button type="button">
-        <span class="visually-hidden">Open menu</span>
-      </button>
-      <ul class="nav__list">
-        <li class="nav__item">
-          <a href="#">What’s new</a>
-        </li>
-        <li class="nav__item">
-          <a href="#">Chokers</a>
-        </li>
-        <li class="nav__item">
-          <a href="#">Necklaces</a>
-        </li>
-        <li class="nav__item">
-          <a href="#">Rings</a>
-        </li>
-        <li class="nav__item">
-          <a href="#">Earrings</a>
-        </li>
-      </ul>
-      <ul class="nav__list-extra">
-        <li>
-          <a href="#">About CH</a>
-        </li>
-        <li>
-          <a href="#">Stores & Hours</a>
-        </li>
-        <li>
-          <a href="#">Contact Us</a>
-        </li>
-      </ul>
-    </nav>
+    <div class="nav-wrapper">
+      <nav class="nav">
+        <ul class="nav__list">
+          <li class="nav__item">
+            <a href="#">What’s new</a>
+          </li>
+          <li class="nav__item">
+            <a href="#">Chokers</a>
+          </li>
+          <li class="nav__item">
+            <a href="#">Necklaces</a>
+          </li>
+          <li class="nav__item">
+            <a href="#">Rings</a>
+          </li>
+          <li class="nav__item">
+            <a href="#">Earrings</a>
+          </li>
+        </ul>
+        <ul class="nav__list-extra">
+          <li>
+            <a href="#">About CH</a>
+          </li>
+          <li>
+            <a href="#">Stores & Hours</a>
+          </li>
+          <li>
+            <a href="#">Contact Us</a>
+          </li>
+        </ul>
+        <ul class="nav__list-login">
+          <li>
+            <a href="#">Login</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
   </header>
   <main class="main">
     <div class="promo promo--main">
-      <div class="promo__image">
+      <div class="promo__image promo__image--main">
         <div class="container container--grid">
           <h1>PERFECTION</h1>
           <p>made to be yours</p>
@@ -85,23 +92,33 @@
       <ul class="new-products__list">
         <li class="product-card">
           <a href="#">
-            <img src="img/purple-gemstone-necklace-desktop.jpg" alt="">
-            <h4>Necklace with amethyst</h4>
-            <span>$ 145</span>
+            <picture>
+              <img src="img/purple-gemstone-necklace-desktop.jpg" alt="Necklace with purple amethyst jewellery">
+            </picture>
+            <div class="product-card__information">
+              <h4>Necklace with amethyst</h4>
+              <span>$ 145</span>
+            </div>
           </a>
         </li>
         <li class="product-card">
           <a href="#">
-            <img src="img/layered-choker-necklace-desktop.jpg" alt="">
-            <h4>Layered сhoker</h4>
-            <span>$ 115</span>
+            <picture>
+              <img src="img/layered-choker-necklace-desktop.jpg" alt="">
+            </picture>
+            <div class="product-card__information">
+              <h4>Layered сhoker</h4>
+              <span>$ 115</span>
+            </div>
           </a>
         </li>
         <li class="product-card">
           <a href="#">
             <img src="img/dainty-gold-necklace-desktop.jpg" alt="">
-            <h4>Gold chain</h4>
-            <span>$ 215</span>
+            <div class="product-card__information">
+              <h4>Gold chain</h4>
+              <span>$ 215</span>
+            </div>
           </a>
         </li>
         <li class="product-card">

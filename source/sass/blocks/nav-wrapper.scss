@@ -1,0 +1,11 @@
+.nav-wrapper {
+  border-top: 1px solid $light-grey;
+  padding-top: 18px;
+  padding-bottom: 19px;
+}
+
+@media (max-width: $width-only-tablet) {
+  .nav-wrapper {
+    border: 0;
+  }
+}

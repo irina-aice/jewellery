@@ -16,7 +16,7 @@
 }
 
 .footer__information {
-  width: 40%;
+  width: 48%;
 }
 
 @media (max-width: $width-only-tablet) {
@@ -26,7 +26,7 @@
 }
 
 .footer__links {
-  width: 60%;
+  width: 52%;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -63,6 +63,10 @@
 }
 
 .footer__input {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-right: 88px;
   border-bottom: 1px solid $white;
 }
 
@@ -79,6 +83,7 @@
 }
 
 .footer__input a {
+  margin-right: 41px;
   color: inherit;
 }
 

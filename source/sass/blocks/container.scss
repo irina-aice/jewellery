@@ -1,16 +1,16 @@
 .container {
   @include container;
 
-  &--catalog {
-    min-height: 261px;
-  }
-
   &--grid {
     min-height: 463px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+  }
+
+  &--catalog {
+    min-height: 261px;
   }
 }
 

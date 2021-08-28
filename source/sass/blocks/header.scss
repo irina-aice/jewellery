@@ -1,5 +1,5 @@
 .header {
-  @include container;
+  padding-top: 30px;
 }
 
 @media (max-width: $width-only-tablet) {
@@ -10,9 +10,39 @@
 }
 
 .header__grid {
+  @include container;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+}
+
+.header__button {
+  display: none;
+}
+
+@media (max-width: $width-only-tablet) {
+  .header__button {
+    display: block;
+    top: 0;
+    left: 0;
+    width: 35px;
+    height: 101px;
+    margin: 0;
+    padding: 0;
+    background-color: transparent;
+    border: 0;
+  }
+
+  .header__button::before {//.nav--opened
+    content: "";
+    position: absolute;
+    top: 55px;
+    left: 45px;
+    width: 25px;
+    height: 2px;
+    background-color: $white;
+    box-shadow: 0 6px 0 0 $white, 0 13px 0 0 $white;
+  }
 }
 
 .header input {
@@ -32,8 +62,9 @@
   }
 }
 
-/*@media (max-width: $width-only-tablet) {
-  .header input::placeholder {
-    display: none;
+@media (max-width: $width-only-tablet) {
+  .header label {
+    position: absolute;
+    top: 106px;
   }
-}*/
+}

@@ -1,6 +1,8 @@
 .questions {
   @include container;
   max-width: 970px;
+  padding-top: 130px;
+  padding-bottom: 108px;
 }
 
 .questions h3 {
@@ -8,10 +10,12 @@
   margin: 0;
   font-size: 34px;
   letter-spacing: 0.03em;
+  text-align: center;
 }
 
 .questions ul {
   @include reset-list;
+  margin-top: 60px;
 }
 
 .questions ul:last-child {
@@ -19,6 +23,7 @@
 }
 
 .questions__item {
+  padding: 50px 52px 50px 43px;
   border-top: 1px solid $brown;
   border-left: 1px solid $brown;
   border-right: 1px solid $brown;
@@ -38,7 +43,8 @@
 }
 
 .questions__item p {
-  margin: 0;
+  margin: 20px 0 0 0;
+  width: 60%;
   font-weight: 400;
 }
 

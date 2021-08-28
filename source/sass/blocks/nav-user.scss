@@ -5,6 +5,22 @@
   justify-content: space-between;
 }
 
+.nav-user__item + .nav-user__item {
+  margin-left: 35px;
+}
+
+@media (max-width: $width-only-tablet) {
+  .nav-user__item + .nav-user__item {
+    margin-left: 0;
+  }
+}
+
+@media (max-width: $width-only-tablet) {
+  .nav-user__item--login {
+    display: none;
+  }
+}
+
 .nav-user__item a {
   font-size: 14px;
   color: inherit;

@@ -6,11 +6,16 @@
   background-color: $white;
 
   &--apply {
+    width: 100%;
+    min-height: 68px;
+    margin-bottom: 25px;
     color: $white;
     background-color: $brown;
   }
 
   &--clear {
+    width: 100%;
+    min-height: 68px;
     border: 1px solid $brown;
   }
 
