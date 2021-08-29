@@ -10,18 +10,18 @@
   background-repeat: no-repeat;
 
   &--main {
-    background-image: url("../img/main-promo-desctop.jpg");
+    background-image: url("../img/main-promo-desktop.png");
 
     @media (min-resolution: 2dppx) {
-      background-image: url("../img/main-promo-desctop@2x.jpg");
+      background-image: url("../img/main-promo-desktop@2x.png");
     }
   }
 
   &--catalog {
-    background-image: url("../img/catalog-promo-desctop.jpg");
+    background-image: url("../img/catalog-promo-desktop.png");
 
     @media (min-resolution: 2dppx) {
-      background-image: url("../img/catalog-promo-desctop@2x.jpg");
+      background-image: url("../img/catalog-promo-desktop@2x.png");
     }
   }
 }
@@ -31,18 +31,18 @@
     background-size: cover;
 
     &--main {
-      background-image: url("../img/main-promo-tablet.jpg");
+      background-image: url("../img/main-promo-tablet.png");
 
       @media (min-resolution: 2dppx) {
-        background-image: url("../img/main-promo-tablet@2x.jpg");
+        background-image: url("../img/main-promo-tablet@2x.png");
       }
     }
 
     &--catalog {
-      background-image: url("../img/catalog-promo-tablet.jpg");
+      background-image: url("../img/catalog-promo-tablet.png");
 
       @media (min-resolution: 2dppx) {
-        background-image: url("../img/catalog-promo-tablet@2x.jpg");
+        background-image: url("../img/catalog-promo-tablet@2x.png");
       }
     }
   }
@@ -51,18 +51,18 @@
 @media (max-width: $width-only-mobile) {
   .promo__image {
     &--main {
-      background-image: url("../img/main-promo-mobile.jpg");
+      background-image: url("../img/main-promo-mobile.png");
 
       @media (min-resolution: 2dppx) {
-        background-image: url("../img/main-promo-mobile@2x.jpg");
+        background-image: url("../img/main-promo-mobile@2x.png");
       }
     }
 
     &--catalog {
-      background-image: url("../img/catalog-promo-mobile.jpg");
+      background-image: url("../img/catalog-promo-mobile.png");
 
       @media (min-resolution: 2dppx) {
-        background-image: url("../img/catalog-promo-mobile@2x.jpg");
+        background-image: url("../img/catalog-promo-mobile@2x.png");
       }
     }
   }

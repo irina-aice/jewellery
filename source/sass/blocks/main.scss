@@ -1,0 +1,19 @@
+.main {
+  position: relative;
+}
+
+.main::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  left: 0;
+  bottom: 132px;
+  background-color: $light-grey;
+}
+
+@media (max-width: $width-only-mobile) {
+  .main::after {
+    color: transparent;
+  }
+}

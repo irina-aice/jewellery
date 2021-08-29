@@ -29,6 +29,19 @@
   border-right: 1px solid $brown;
 }
 
+@media (max-width: $width-only-tablet) {
+  .questions__item {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+}
+
+@media (max-width: $width-only-mobile) {
+  .questions__item {
+    padding: 22px 25px 24px 25px;
+  }
+}
+
 .questions__item h4 {
   margin: 0;
   font-weight: 500;
@@ -46,6 +59,12 @@
   margin: 20px 0 0 0;
   width: 60%;
   font-weight: 400;
+}
+
+@media (max-width: $width-only-tablet) {
+  .questions__item p {
+    width: 90%;
+  }
 }
 
 @media (max-width: $width-only-mobile) {

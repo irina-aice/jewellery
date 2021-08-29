@@ -2,6 +2,10 @@
   @include container;
 }
 
+.new-products p {
+  text-align: center;
+}
+
 .new-products__list {
   @include reset-list;
   display: grid;

@@ -1,3 +1,14 @@
+.nav-user {
+  margin-top: 17px;
+  padding-left: 54px;
+}
+
+@media (max-width: $width-only-tablet) {
+  .nav-user {
+    padding-left: 0;
+  }
+}
+
 .nav-user ul {
   @include reset-list;
   display: flex;
@@ -24,4 +35,20 @@
 .nav-user__item a {
   font-size: 14px;
   color: inherit;
+}
+
+.nav-user__item svg {
+  display: none;
+}
+
+@media (max-width: $width-only-tablet) {
+  .nav-user__item svg {
+    display: block;
+    //color: $darker-grey;
+    color: $white;
+  }
+
+  .nav-user__item span {
+    display: none;
+  }
 }

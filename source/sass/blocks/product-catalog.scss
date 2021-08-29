@@ -1,9 +1,16 @@
+@media (max-width: $width-only-tablet) {
+  .product-catalog {
+    padding-top: 50px;
+  }
+}
+
 .product-catalog__list {
   @include reset-list;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-column-gap: 30px;
   grid-row-gap: 40px;
+  margin-bottom: 40px;
 }
 
 @media (max-width: $width-only-mobile) {
@@ -17,6 +24,7 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  padding-top: 40px;
 }
 
 .product-catalog__pagination {

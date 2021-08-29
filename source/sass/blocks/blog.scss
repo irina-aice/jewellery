@@ -2,6 +2,10 @@
   @include container;
 }
 
+.blog p {
+  text-align: center;
+}
+
 .blog__list {
   @include reset-list;
   display: grid;

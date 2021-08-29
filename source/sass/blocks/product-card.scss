@@ -2,6 +2,11 @@
   color: inherit;
 }
 
+.product-card img {
+  width: 100%;
+  object-fit: cover;
+}
+
 .product-card__information {
   text-align: center;
 }

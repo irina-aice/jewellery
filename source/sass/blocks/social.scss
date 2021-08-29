@@ -1,4 +1,34 @@
 @media (max-width: $width-only-mobile) {
+  .social {
+    display: grid;
+    grid-template-columns: repeat(4, min-content);
+    grid-column-gap: 30px;
+    margin-top: 50px;
+  }
+}
+
+.social__link {
+  display: inline-grid;
+  grid-template-columns: min-content 1fr;
+  grid-column-gap: 15px;
+}
+
+.social__link svg {
+  color: $white;
+}
+
+@media (max-width: $width-only-mobile) {
+  .social__link svg {
+    height: 21px;
+    width: auto;
+  }
+
+  /*.social__icon-twitter {
+    height: 18px;
+  }*/
+}
+
+@media (max-width: $width-only-mobile) {
   .social__link span {
     display: none;
   }
