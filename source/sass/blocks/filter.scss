@@ -30,7 +30,13 @@
   font-size: 14px;
 }
 
-.filter__item label::after {
+@media (max-width: $width-only-tablet) {
+  .filter__item label {
+    font-size: 16px;
+  }
+}
+
+.filter__checkbox + label::before {
   content: "";
   position: absolute;
   top: 0;
@@ -38,22 +44,11 @@
   width: 15px;
   height: 15px;
   border: 1px solid $brown;
+  background-color: transparent;
 }
 
-.filter__item label::before + .filter__item input:checked {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 15px;
-  height: 15px;
+.filter__checkbox:checked + label::before {
   background-color: $brown;
-}
-
-@media (max-width: $width-only-tablet) {
-  .filter__item label {
-    font-size: 16px;
-  }
 }
 
 .filter__range {

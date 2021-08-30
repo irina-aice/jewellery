@@ -74,6 +74,15 @@
   .header__grid label {
     position: absolute;
     top: 106px;
+    left: 45px;
+    right: 45px;
+  }
+}
+
+@media (max-width: $width-only-mobile) {
+  .header__grid label {
+    left: 15px;
+    right: 15px;
   }
 }
 
@@ -85,7 +94,7 @@
 
 @media (max-width: $width-only-tablet) {
   .header__grid input {
-    width: auto;
+    width: 100%;
     background-color: $light-white;
     border-radius: 21px;
     border: 0;

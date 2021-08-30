@@ -105,28 +105,20 @@
               <h3>Product</h3>
               <ul>
                 <li class="filter__item">
-                  <label>
-                    <input class="visually-hidden" type="checkbox" name="necklaces" id="necklaces" value="necklaces" checked="checked">
-                    Necklaces
-                  </label>
+                  <input class="filter__checkbox visually-hidden" type="checkbox" name="product[]" id="filter-necklaces" value="necklaces" checked="checked">
+                  <label for="filter-necklaces">Necklaces</label>
                 </li>
                 <li class="filter__item">
-                  <label>
-                    <input class="visually-hidden" type="checkbox" name="chokers" id="chokers" value="chokers" checked="checked">
-                    Chokers
-                  </label>
+                  <input class="filter__checkbox visually-hidden" type="checkbox" name="product[]" id="filter-chokers" value="chokers" checked="checked">
+                  <label for="filter-chokers">Chokers</label>
                 </li>
                 <li class="filter__item">
-                  <label>
-                    <input class="visually-hidden" type="checkbox" name="rings" id="rings" value="rings">
-                    Rings
-                  </label>
+                  <input class="filter__checkbox visually-hidden" type="checkbox" name="product[]" id="filter-rings" value="rings">
+                  <label for="filter-rings">Rings</label>
                 </li>
                 <li class="filter__item">
-                  <label>
-                    <input class="visually-hidden" type="checkbox" name="earrings" id="earrings" value="earrings" checked="checked">
-                    Earrings
-                  </label>
+                  <input class="filter__checkbox visually-hidden" type="checkbox" name="product[]" id="filter-earrings" value="earrings" checked="checked">
+                  <label for="filter-earrings">Earrings</label>
                 </li>
               </ul>
             </li>
@@ -134,16 +126,12 @@
               <h3>Material</h3>
               <ul>
                 <li class="filter__item">
-                  <label>
-                    <input class="visually-hidden" type="checkbox" name="gold" id="gold" value="gold">
-                    Gold
-                  </label>
+                  <input class="filter__checkbox visually-hidden" type="checkbox" name="material[]" id="filter-gold" value="gold">
+                  <label for="filter-gold">Gold</label>
                 </li>
                 <li class="filter__item">
-                  <label>
-                    <input class="visually-hidden" type="checkbox" name="silver" id="silver" value="silver">
-                    Silver
-                  </label>
+                  <input class="filter__checkbox visually-hidden" type="checkbox" name="material[]" id="filter-silver" value="silver">
+                  <label for="filter-silver">Silver</label>
                 </li>
               </ul>
             </li>
@@ -151,16 +139,12 @@
               <h3>Collection</h3>
               <ul>
                 <li class="filter__item">
-                  <label>
-                    <input class="visually-hidden" type="checkbox" name="flamingo" id="flamingo" value="flamingo">
-                    Pink flamingo
-                  </label>
+                  <input class="filter__checkbox visually-hidden" type="checkbox" name="collection[]" id="filter-flamingo" value="flamingo">
+                  <label for="filter-flamingo">Pink flamingo</label>
                 </li>
                 <li class="filter__item">
-                  <label>
-                    <input class="visually-hidden" type="checkbox" name="dreams" id="dreams" value="dreams">
-                    Dreams
-                  </label>
+                  <input class="filter__checkbox visually-hidden" type="checkbox" name="collection[]" id="filter-dreams" value="dreams">
+                  <label for="filter-dreams">Dreams</label>
                 </li>
               </ul>
             </li>
@@ -182,7 +166,11 @@
         <ul class="product-catalog__list">
           <li class="product-card">
             <a href="#">
-              <img src="img/double-pearl-earrings-desktop.jpg" alt="">
+              <picture>
+                <img srcset="img/double-pearl-earrings-mobile.jpg 130w, img/double-pearl-earrings-mobile@2x.jpg 260w, img/double-pearl-earrings-tablet.jpg 206w, img/double-pearl-earrings-tablet@2x.jpg 412w, img/double-pearl-earrings-desktop.jpg 270w, img/double-pearl-earrings-desktop@2x.jpg 540w" sizes="(min-width: 1024px) 270px,
+                      (min-width: 768px) 206px,
+                      130px" src="img/double-pearl-earrings-desktop.jpg" width="270" height="272" alt="White double pearl earrings">
+              </picture>
               <div class="product-card__information">
                 <h4>Double pearl earrings </h4>
                 <span>$ 115</span>
@@ -191,7 +179,11 @@
           </li>
           <li class="product-card">
             <a href="#">
-              <img src="img/black-choker-gold-bead-desktop.jpg" alt="">
+              <picture>
+                <img srcset="img/black-choker-gold-bead-mobile.jpg 130w, img/black-choker-gold-bead-mobile@2x.jpg 260w, img/black-choker-gold-bead-tablet.jpg 206w, img/black-choker-gold-bead-tablet@2x.jpg 412w, img/black-choker-gold-bead-desktop.jpg 270w, img/black-choker-gold-bead-desktop@2x.jpg 540w" sizes="(min-width: 1024px) 270px,
+                      (min-width: 768px) 206px,
+                      130px" src="img/black-choker-gold-bead-desktop.jpg" width="270" height="272" alt="Thin choker with gold bead">
+              </picture>
               <div class="product-card__information">
                 <h4>Choker with gold bead</h4>
                 <span>$ 55</span>

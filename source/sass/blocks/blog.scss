@@ -26,6 +26,12 @@
   min-height: 300px;
 }
 
+@media (max-width: $width-only-mobile) {
+  .blog__list li {
+    min-height: 512px;
+  }
+}
+
 .blog__list li:nth-child(3n+1) {
   grid-column-start: 1;
   grid-column-end: 2;
@@ -83,10 +89,59 @@
 
 .blog__image--care {
   background-image: url("../img/blog-care-desktop.jpg");
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/blog-care-desktop@2x.jpg");
+  }
 }
+
+@media (max-width: $width-only-tablet) {
+  .blog__image--care {
+    background-image: url("../img/blog-care-tablet.jpg");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/blog-care-tablet@2x.jpg");
+    }
+  }
+}
+
+@media (max-width: $width-only-mobile) {
+  .blog__image--care {
+    background-image: url("../img/blog-care-mobile.jpg");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/blog-care-mobile@2x.jpg");
+    }
+  }
+}
+
 
 .blog__image--power {
   background-image: url("../img/blog-power-desktop.jpg");
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/blog-power-desktop@2x.jpg");
+  }
+}
+
+@media (max-width: $width-only-tablet) {
+  .blog__image--power {
+    background-image: url("../img/blog-power-tablet.jpg");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/blog-power-tablet@2x.jpg");
+    }
+  }
+}
+
+@media (max-width: $width-only-mobile) {
+  .blog__image--power {
+    background-image: url("../img/blog-power-mobile.jpg");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/blog-power-mobile@2x.jpg");
+    }
+  }
 }
 
 .blog__image--trends {
@@ -95,6 +150,34 @@
   grid-row-start: 1;
   grid-row-end: 3;
   background-image: url("../img/blog-trends-desktop.jpg");
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/blog-trends-desktop@2x.jpg");
+  }
+}
+
+@media (max-width: $width-only-tablet) {
+  .blog__image--trends {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    background-image: url("../img/blog-trends-tablet.jpg");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/blog-trends-tablet@2x.jpg");
+    }
+  }
+}
+
+@media (max-width: $width-only-mobile) {
+  .blog__image--trends {
+    background-image: url("../img/blog-trends-mobile.jpg");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/blog-trends-mobile@2x.jpg");
+    }
+  }
 }
 
 .blog__information {
