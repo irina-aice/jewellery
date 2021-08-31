@@ -2,3 +2,8 @@
   color: inherit;
   border-bottom: 1px solid $brown;
 }
+
+.link:hover {
+  color: $brown;
+  border: 0;
+}

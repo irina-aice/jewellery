@@ -93,6 +93,11 @@
   margin-right: 12px;
 }
 
+.footer__input a:hover span,
+.footer__input a:hover svg {
+  color: $brown;
+}
+
 .footer__links {
   width: 52%;
   display: flex;
@@ -135,4 +140,8 @@
 
 .footer__list a {
   color: inherit;
+}
+
+.footer__list a:hover {
+  color: $brown;
 }

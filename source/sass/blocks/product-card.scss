@@ -1,5 +1,14 @@
 .product-card a {
+  display: block;
   color: inherit;
+}
+
+.product-card a:hover {
+  outline: 2px solid $brown;
+}
+
+.product-card a:hover .product-card__information {
+  background-color: $brown;
 }
 
 .product-card img {

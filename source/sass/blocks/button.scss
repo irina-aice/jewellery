@@ -24,3 +24,19 @@
     background-color: $brown;
   }
 }
+
+.button:hover {
+  cursor: pointer;
+}
+
+.button--apply:hover {
+  color: $darker-grey;
+}
+
+.button--clear:hover {
+  background-color: $brown;
+}
+
+.button--pagination:hover {
+  color: $brown;
+}

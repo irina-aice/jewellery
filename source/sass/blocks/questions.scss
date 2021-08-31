@@ -73,6 +73,11 @@
   color: $brown;
 }
 
+.questions__icon:hover {
+  color: $darker-grey;
+  cursor: pointer;
+}
+
 .questions__item p {
   margin: 20px 0 0 0;
   width: 60%;

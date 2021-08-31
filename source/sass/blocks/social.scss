@@ -28,6 +28,10 @@
   }*/
 }
 
+.social__link:hover svg {
+  color: $brown;
+}
+
 @media (max-width: $width-only-mobile) {
   .social__link span {
     display: none;

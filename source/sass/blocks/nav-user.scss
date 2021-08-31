@@ -37,6 +37,10 @@
   color: inherit;
 }
 
+.nav-user__item a:hover {
+  color: $brown;
+}
+
 .nav-user__item svg {
   display: none;
 }
