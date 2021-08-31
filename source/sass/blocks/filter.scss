@@ -9,8 +9,20 @@
   border-bottom: 1px solid $brown;
 }
 
+.filter__title-container {
+  position: relative;
+}
+
+.filter__title-container[aria-expanded="false"] .filter__icon--close {
+  display: none;
+}
+
+.filter__title-container[aria-expanded="true"] .filter__icon--open {
+  display: none;
+}
+
 .filter h3 {
-  margin: 0 0 30px 0;
+  margin: 0;
   font-weight: 500;
 }
 
@@ -20,8 +32,18 @@
   }
 }
 
+.filter__icon {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 15px;
+  height: 8px;
+  color: $brown;
+}
+
 .filter ul {
   @include reset-list;
+  margin: 30px 0 0 0;
 }
 
 .filter__item label {
@@ -52,6 +74,10 @@
 }
 
 .filter__range {
+  margin-top: 30px;
+}
+
+.filter__range-line {
   position: relative;
   height: 1px;
   width: 100%;

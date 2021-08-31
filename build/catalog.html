@@ -102,8 +102,16 @@
         <form class="form" action="https://echo.htmlacademy.ru/" method="get">
           <ul>
             <li class="filter">
-              <h3>Product</h3>
-              <ul>
+              <div class="filter__title-container js-collapsible-title" aria-expanded="false">
+                <h3>Product</h3>
+                <svg class="filter__icon filter__icon--open" width="15" height="8" fill="transparent">
+                  <use xlink:href="img/sprite.svg#arrow-down"></use>
+                </svg>
+                <svg class="filter__icon filter__icon--close" width="15" height="8" fill="transparent">
+                  <use xlink:href="img/sprite.svg#arrow-up"></use>
+                </svg>
+              </div>
+              <ul class="js-collapsible-content">
                 <li class="filter__item">
                   <input class="filter__checkbox visually-hidden" type="checkbox" name="product[]" id="filter-necklaces" value="necklaces" checked="checked">
                   <label for="filter-necklaces">Necklaces</label>
@@ -123,8 +131,16 @@
               </ul>
             </li>
             <li class="filter">
-              <h3>Material</h3>
-              <ul>
+              <div class="filter__title-container js-collapsible-title" aria-expanded="false">
+                <h3>Material</h3>
+                <svg class="filter__icon filter__icon--open" width="15" height="8" fill="transparent">
+                  <use xlink:href="img/sprite.svg#arrow-down"></use>
+                </svg>
+                <svg class="filter__icon filter__icon--close" width="15" height="8" fill="transparent">
+                  <use xlink:href="img/sprite.svg#arrow-up"></use>
+                </svg>
+              </div>
+              <ul class="js-collapsible-content">
                 <li class="filter__item">
                   <input class="filter__checkbox visually-hidden" type="checkbox" name="material[]" id="filter-gold" value="gold">
                   <label for="filter-gold">Gold</label>
@@ -136,8 +152,16 @@
               </ul>
             </li>
             <li class="filter">
-              <h3>Collection</h3>
-              <ul>
+              <div class="filter__title-container js-collapsible-title" aria-expanded="false">
+                <h3>Collection</h3>
+                <svg class="filter__icon filter__icon--open" width="15" height="8" fill="transparent">
+                  <use xlink:href="img/sprite.svg#arrow-down"></use>
+                </svg>
+                <svg class="filter__icon filter__icon--close" width="15" height="8" fill="transparent">
+                  <use xlink:href="img/sprite.svg#arrow-up"></use>
+                </svg>
+              </div>
+              <ul class="js-collapsible-content">
                 <li class="filter__item">
                   <input class="filter__checkbox visually-hidden" type="checkbox" name="collection[]" id="filter-flamingo" value="flamingo">
                   <label for="filter-flamingo">Pink flamingo</label>
@@ -149,11 +173,21 @@
               </ul>
             </li>
             <li class="filter">
-              <h3>Price</h3>
-              <div class="filter__range">
-                <div class="filter__range-scale filter__range-scale--min"></div>
-                <div class="filter__range-space"></div>
-                <div class="filter__range-scale filter__range-scale--max"></div>
+              <div class="filter__title-container js-collapsible-title" aria-expanded="false">
+                <h3>Price</h3>
+                <svg class="filter__icon filter__icon--open" width="15" height="8" fill="transparent">
+                  <use xlink:href="img/sprite.svg#arrow-down"></use>
+                </svg>
+                <svg class="filter__icon filter__icon--close" width="15" height="8" fill="transparent">
+                  <use xlink:href="img/sprite.svg#arrow-up"></use>
+                </svg>
+              </div>
+              <div class="filter__range js-collapsible-content">
+                <div class="filter__range-line">
+                  <div class="filter__range-scale filter__range-scale--min"></div>
+                  <div class="filter__range-space"></div>
+                  <div class="filter__range-scale filter__range-scale--max"></div>
+                </div>
               </div>
             </li>
           </ul>
@@ -523,5 +557,6 @@
     </form>
   </section>
 
+  <script src="js/main.js"></script>
 </body>
 </html>
