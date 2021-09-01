@@ -64,6 +64,10 @@
   }
 }
 
+.questions__item h4:hover {
+  cursor: pointer;
+}
+
 .questions__icon {
   position: absolute;
   top: 52px;

@@ -21,15 +21,19 @@
   display: none;
 }
 
-.filter h3 {
+.filter__title-container h3 {
   margin: 0;
   font-weight: 500;
 }
 
 @media (max-width: $width-only-tablet) {
-  .filter h3 {
+  .filter__title-container h3 {
     font-size: 18px;
   }
+}
+
+.filter__title-container h3:hover {
+  cursor: pointer;
 }
 
 .filter__icon {
