@@ -1,8 +1,10 @@
 .blog {
   @include container;
+  padding-top: 114px;
 }
 
 .blog p {
+  margin: 20px 0 0 0;
   text-align: center;
 }
 
@@ -13,6 +15,7 @@
   grid-template-rows: repeat(2, 1fr);
   grid-column-gap: 30px;
   grid-row-gap: 30px;
+  margin-top: 64px;
 }
 
 @media (max-width: $width-only-tablet) {
@@ -117,6 +120,10 @@
 
 
 .blog__image--power {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 1;
+  grid-row-end: 2;
   background-image: url("../img/blog-power-desktop.jpg");
 
   @media (min-resolution: 2dppx) {

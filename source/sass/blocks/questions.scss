@@ -2,7 +2,7 @@
   @include container;
   max-width: 970px;
   padding-top: 130px;
-  padding-bottom: 108px;
+  padding-bottom: 120px;
 }
 
 .questions h3 {
@@ -15,7 +15,7 @@
 
 .questions ul {
   @include reset-list;
-  margin-top: 60px;
+  margin-top: 62px;
 }
 
 .questions ul:last-child {
@@ -24,7 +24,7 @@
 
 .questions__item {
   position: relative;
-  padding: 50px 52px 50px 43px;
+  padding: 45px 52px 42px 43px;
   border-top: 1px solid $brown;
   border-left: 1px solid $brown;
   border-right: 1px solid $brown;
@@ -41,6 +41,14 @@
   .questions__item {
     padding: 22px 25px 24px 25px;
   }
+}
+
+.questions__item:nth-child(3n+3) {
+  padding-top: 48px;
+}
+
+.questions__item:nth-child(4n+4) {
+  padding-top: 48px;
 }
 
 .questions__item div[aria-expanded="false"] .questions__icon--close {
@@ -83,7 +91,7 @@
 }
 
 .questions__item p {
-  margin: 20px 0 0 0;
+  margin: 9px 0 0 7px;
   width: 60%;
   font-weight: 400;
 }

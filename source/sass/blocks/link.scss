@@ -1,6 +1,14 @@
 .link {
   color: inherit;
   border-bottom: 1px solid $brown;
+
+  &--blog {
+    padding-bottom: 3px;
+  }
+
+  &--contacts {
+    padding-bottom: 3px;
+  }
 }
 
 .link:hover {

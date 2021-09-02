@@ -17,6 +17,35 @@
     document.documentElement.classList.remove('no-js');
     document.documentElement.classList.add('js');
   </script>
+
+  <!-- Pixel Glass -->
+  <style>
+    HTML {
+      background-repeat: no-repeat;
+      background-position: 50% 0;
+      /* По умолчанию показывается мобильный макет */
+      background-image: url("img/main-mobile.png");
+    }
+
+    /* Планшет */
+    @media ( min-width: 768px ) {
+      HTML {
+        /* Планшетный макет */
+        background-image: url("img/main-tablet.png");
+      }
+    }
+
+    /* Десктоп */
+    @media ( min-width: 1366px ) {
+      HTML {
+        /* Десктопный макет */
+        background-image: url("img/main-desktop.png");
+      }
+    }
+  </style>
+  <link href="/node_modules/pixel-glass/styles.css" rel="stylesheet">
+  <script src="/node_modules/pixel-glass/script.js"></script>
+  <!-- // Pixel Glass -->
 </head>
 <body>
   <header class="header">
@@ -166,7 +195,7 @@
     <section class="blog">
       <h3 class="title title--blog">Blog</h3>
       <p>
-        <a href="#" class="link">Read All</a>
+        <a href="#" class="link link--blog">Read All</a>
       </p>
       <div>
         <ul class="blog__list">
@@ -265,7 +294,9 @@
     <section class="contacts">
       <div>
         <p class="contacts__social">@Chjewellery</p>
-        <p><a href="#" class="link">Follow Us</a></p>
+        <p class="contacts__link">
+          <a href="#" class="link link--contacts">Follow Us</a>
+        </p>
       </div>
       <div></div>
     </section>

@@ -17,26 +17,26 @@
 
 
 @media (max-width: $width-only-tablet) {
-  .header__closed {
+  .js-header--closed {
     background-color: $white;
     color: $darker-grey;
   }
 
-  .js-header__closed .nav-wrapper,
-  .js-header__closed .header__grid label {
+  .js-header--closed .nav-wrapper,
+  .js-header--closed .header__grid label {
     display: none;
   }
 
-  .js-header__closed .header__button::before {
+  .js-header--closed .header__button::before {
     background-color: $darker-grey;
     box-shadow: 0 6px 0 0 $darker-grey, 0 13px 0 0 $darker-grey;
   }
 
-  .js-header__closed .header__logo {
+  .js-header--closed .header__logo {
     color: $brown;
   }
 
-  .js-header__closed .nav-user__item svg {
+  .js-header--closed .nav-user__item svg {
     color: $darker-grey;
   }
 
@@ -123,7 +123,7 @@
 
 .header__grid label {
   position: relative;
-  margin-top: 17px;
+  margin-top: 9px;
 }
 
 @media (max-width: $width-only-tablet) {
