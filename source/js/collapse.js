@@ -16,18 +16,6 @@
 
       title.setAttribute('aria-expanded', !expanded);
       content.hidden = expanded;
-
-      //hide others
-      collapsibleTitles.forEach((colTitle) => {
-        if (title.isEqualNode(colTitle)) {
-          return true;
-        }
-
-        const colContent = colTitle.nextElementSibling;
-
-        colTitle.setAttribute('aria-expanded', 'false');
-        colContent.hidden = true;
-      });
     });
   });
 })();

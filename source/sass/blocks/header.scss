@@ -15,28 +15,27 @@
   }
 }
 
-
 @media (max-width: $width-only-tablet) {
-  .js-header--closed {
+  .header--closed {
     background-color: $white;
     color: $darker-grey;
   }
 
-  .js-header--closed .nav-wrapper,
-  .js-header--closed .header__grid label {
+  .header--closed .nav-wrapper,
+  .header--closed .header__grid label {
     display: none;
   }
 
-  .js-header--closed .header__button::before {
+  .header--closed .header__button::before {
     background-color: $darker-grey;
     box-shadow: 0 6px 0 0 $darker-grey, 0 13px 0 0 $darker-grey;
   }
 
-  .js-header--closed .header__logo {
+  .header--closed .header__logo {
     color: $brown;
   }
 
-  .js-header--closed .nav-user__item svg {
+  .header--closed .nav-user__item svg {
     color: $darker-grey;
   }
 
@@ -45,11 +44,36 @@
   }
 }
 
+.header--static {
+  background-color: $white;
+  color: $darker-grey;
+}
+
+.header--static .header__logo {
+  color: $brown;
+}
+
 .header__grid {
   @include container;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+}
+
+.header--static .header__grid {
+  justify-content: center;
+}
+
+.header--static p {
+  text-align: center;
+}
+
+.header--static a {
+  color: $darker-grey;
+}
+
+.header--static a:hover {
+  color: $brown;
 }
 
 .header__button {

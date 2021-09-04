@@ -53,6 +53,13 @@ const scripts = () => {
     .pipe(sync.stream());
 }
 
+const vendorScripts = () => {
+  return gulp.src("source/js/vendor/*.js")
+    .pipe(concat("vendor.js"))
+    .pipe(gulp.dest("build/js"))
+    .pipe(sync.stream());
+}
+
 exports.scripts = scripts;
 
 //Images
@@ -152,6 +159,7 @@ const build = gulp.series(
     styles,
     html,
     scripts,
+    vendorScripts,
     sprite,
     copy,
     images,
@@ -166,6 +174,7 @@ exports.default = gulp.series(
     styles,
     html,
     scripts,
+    vendorScripts,
     sprite,
     copy,
     createWebp

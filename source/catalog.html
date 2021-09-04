@@ -19,9 +19,9 @@
   </script>
 </head>
 <body>
-  <header class="header">
+  <header class="js-header header">
     <div class="header__grid">
-      <button class="header__button" type="button">
+      <button class="js-header-menu-btn header__button" type="button">
         <span class="visually-hidden">Open menu</span>
       </button>
       <label>
@@ -36,7 +36,7 @@
       <div class="nav-user">
         <ul>
           <li class="nav-user__item nav-user__item--login">
-            <a href="#">Login</a>
+            <a href="/login.html" data-micromodal-trigger="modal-login">Login</a>
           </li>
           <li class="nav-user__item">
             <a href="#">
@@ -81,12 +81,13 @@
         </ul>
         <ul class="nav__list-login">
           <li>
-            <a href="#">Login</a>
+            <a href="/login.html" data-micromodal-trigger="modal-login">Login</a>
           </li>
         </ul>
       </nav>
     </div>
   </header>
+
   <main class="main">
     <div class="promo promo--catalog">
       <div class="promo__image promo__image--catalog">
@@ -192,7 +193,7 @@
             </li>
           </ul>
           <button class="button button--apply" type="submit">Apply</button>
-          <button class="button button--clear" type="button">Clear All</button>
+          <button class="button button--clear" type="reset">Clear All</button>
         </form>
       </section>
       <section class="product-catalog">
@@ -549,6 +550,7 @@
       </section>
     </section>
   </main>
+
   <footer class="footer">
     <div class="container">
       <div class="footer__grid">
@@ -636,35 +638,45 @@
     </div>
   </footer>
 
-  <section class="modal">
-    <button type="button">
-      <span class="visually-hidden">close</span>
-    </button>
-    <h3 class="title">Log In</h3>
-    <form class="form-modal" action="https://echo.htmlacademy.ru/" method="post">
-      <ul>
-        <li class="form-modal__item">
-          <label>
-            <input type="email" placeholder="Your E-mail">
-          </label>
-        </li>
-        <li class="form-modal__item">
-          <label>
-            <input type="text" placeholder="Password">
-          </label>
-          <p>Forgot your password?</p>
-        </li>
-      </ul>
-      <button class="button button--login" type="submit">Log In</button>
-      <span class="form-modal__question">
-        Don’t have an account?
-        <span>
-          <a href="#">Sign up</a>
-        </span>
-      </span>
-    </form>
-  </section>
+  <div class="modal" id="modal-login" aria-hidden="true">
+    <div class="modal__overlay" tabindex="-1" data-micromodal-close>
+      <div class="modal__container" role="dialog" aria-modal="true" aria-labelledby="modal-login-title">
+        <button class="modal__close" data-micromodal-close aria-label="close modal" type="button">
+          <svg class="modal__close-icon" width="14" height="14" data-micromodal-close>
+            <use xlink:href="img/sprite.svg#modal-close" data-micromodal-close></use>
+          </svg>
+        </button>
+        <div class="modal__image"></div>
+        <div class="modal__content">
+          <h3 id="modal-login-title" class="modal__title title">Log In</h3>
+          <form class="form-modal" action="https://echo.htmlacademy.ru/" method="post">
+            <ul>
+              <li class="form-modal__item">
+                <label>
+                  <span class="visually-hidden">email</span>
+                  <input type="email" placeholder="Your E-mail">
+                </label>
+              </li>
+              <li class="form-modal__item">
+                <label>
+                  <span class="visually-hidden">password</span>
+                  <input type="text" placeholder="Password">
+                </label>
+                <p><a href="#">Forgot your password?</a></p>
+              </li>
+            </ul>
+            <button class="button button--login" type="submit">Log In</button>
+            <p class="form-modal__question">
+              Don’t have an account?
+              <a href="#"><strong>Sign up</strong></a>
+            </p>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
 
+  <script src="js/vendor.js"></script>
   <script src="js/main.js"></script>
 </body>
 </html>

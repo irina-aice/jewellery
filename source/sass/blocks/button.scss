@@ -4,6 +4,7 @@
   font-weight: inherit;
   border: 0;
   background-color: $white;
+  cursor: pointer;
 
   &--apply {
     width: 90%;
@@ -20,13 +21,18 @@
   }
 
   &--login {
+    width: 100%;
+    min-height: 68px;
+    margin-top: 50px;
     color: $white;
     background-color: $brown;
   }
 }
 
-.button:hover {
-  cursor: pointer;
+@media (max-width: $width-only-mobile) {
+  .button--login {
+    margin-top: 40px;
+  }
 }
 
 .button--apply:hover {
@@ -39,4 +45,8 @@
 
 .button--pagination:hover {
   color: $brown;
+}
+
+.button--login:hover {
+  color: $darker-grey;
 }

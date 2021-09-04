@@ -1,11 +1,11 @@
 'use strict';
 
 (function () {
-  const headerOpenedClass = 'js-header--opened';
-  const headerClosedClass = 'js-header--closed';
+  const headerOpenedClass = 'header--opened';
+  const headerClosedClass = 'header--closed';
 
-  const header = document.querySelector('.header');
-  const headerButton = document.querySelector('.header__button');
+  const header = document.querySelector('.js-header');
+  const headerButton = document.querySelector('.js-header-menu-btn');
 
   if (!header || !headerButton) {
     return false;

@@ -16,17 +16,29 @@
 
       title.setAttribute('aria-expanded', !expanded);
       content.hidden = expanded;
+    });
+  });
+})();
 
-      //hide others
-      collapsibleTitles.forEach((colTitle) => {
-        if (title.isEqualNode(colTitle)) {
-          return true;
-        }
+'use strict';
 
-        const colContent = colTitle.nextElementSibling;
+(function () {
+  const links = document.querySelectorAll('a[data-micromodal-trigger]');
 
-        colTitle.setAttribute('aria-expanded', 'false');
-        colContent.hidden = true;
+  if (!links.length) {
+    return false;
+  }
+
+  links.forEach((link) => {
+    link.addEventListener('click', (evt) => {
+      evt.preventDefault();
+
+      const modalId = link.getAttribute('data-micromodal-trigger');
+
+      window.MicroModal.show(modalId, {
+        openClass: 'modal--open',
+        disableScroll: true,
+        debugMode: true,
       });
     });
   });
@@ -35,11 +47,11 @@
 'use strict';
 
 (function () {
-  const headerOpenedClass = 'js-header--opened';
-  const headerClosedClass = 'js-header--closed';
+  const headerOpenedClass = 'header--opened';
+  const headerClosedClass = 'header--closed';
 
-  const header = document.querySelector('.header');
-  const headerButton = document.querySelector('.header__button');
+  const header = document.querySelector('.js-header');
+  const headerButton = document.querySelector('.js-header-menu-btn');
 
   if (!header || !headerButton) {
     return false;
