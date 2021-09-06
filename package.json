@@ -4,11 +4,11 @@
   "description": "",
   "devDependencies": {
     "@htmlacademy/editorconfig-cli": "1.0.0",
-    "autoprefixer": "^10.1.0",
+    "autoprefixer": "^10.3.4",
     "browser-sync": "2.26.13",
     "del": "6.0.0",
-    "eslint": "^7.28.0",
-    "eslint-config-htmlacademy": "^4.0.1",
+    "eslint": "^7.32.0",
+    "eslint-config-htmlacademy": "^4.0.2",
     "gulp": "4.0.2",
     "gulp-concat": "^2.6.1",
     "gulp-htmlmin": "5.0.1",
@@ -16,15 +16,16 @@
     "gulp-plumber": "1.2.1",
     "gulp-postcss": "9.0.0",
     "gulp-rename": "2.0.0",
-    "gulp-sass": "4.1.0",
+    "gulp-sass": "^5.0.0",
     "gulp-sourcemaps": "3.0.0",
     "gulp-svgstore": "7.0.1",
     "gulp-uglify-es": "^2.0.0",
     "gulp-webp": "4.0.1",
     "pixel-glass": "^1.0.13",
-    "postcss": "^8.2.1",
+    "postcss": "^8.3.6",
     "postcss-csso": "5.0.0",
-    "stylelint": "^13.8.0",
+    "sass": "^1.39.0",
+    "stylelint": "^13.13.1",
     "stylelint-config-htmlacademy": "0.1.4"
   },
   "scripts": {
@@ -54,6 +55,8 @@
     "node": "14.15.0"
   },
   "dependencies": {
-    "modern-normalize": "^1.1.0"
+    "micromodal": "^0.4.6",
+    "modern-normalize": "^1.1.0",
+    "swiper": "^6.8.4"
   }
 }

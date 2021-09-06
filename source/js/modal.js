@@ -16,7 +16,6 @@
       window.MicroModal.show(modalId, {
         openClass: 'modal--open',
         disableScroll: true,
-        debugMode: true,
       });
     });
   });

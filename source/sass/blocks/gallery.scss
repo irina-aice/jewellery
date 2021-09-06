@@ -1,0 +1,177 @@
+.gallery {
+  @include reset-list;
+  margin-top: 60px;
+  display: grid;
+  grid-template-columns: 1fr max-content 1fr 1fr;
+  grid-template-rows: auto auto;
+  grid-column-gap: 27px;
+  grid-row-gap: 34px;
+}
+
+@media (max-width: $width-only-tablet) {
+  .gallery {
+    grid-column-gap: 16px;
+    grid-row-gap: 21px;
+  }
+}
+
+@media (max-width: $width-only-mobile) {
+  .gallery {
+    margin-top: 46px;
+    grid-column-gap: 24px;
+    grid-row-gap: 27px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto auto;
+  }
+}
+
+.gallery li {
+  background-color: $brown;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.gallery li:nth-child(7n+1) {
+  grid-row-start: 1;
+  grid-row-end: 2;
+  height: 230px;
+  background-image: url("../img/gallery-square-earrings-desktop.jpg");
+}
+
+@media (max-width: $width-only-tablet) {
+  .gallery li:nth-child(7n+1) {
+    height: 133px;
+    background-image: url("../img/gallery-square-earrings-tablet.jpg");
+  }
+}
+
+.gallery li:nth-child(7n+2) {
+  height: 150px;
+  grid-row-start: 2;
+  grid-row-end: 3;
+  background-image: url("../img/gallery-many-jewelleries.jpg");
+}
+
+@media (max-width: $width-only-tablet) {
+  .gallery li:nth-child(7n+2) {
+    background-image: url("../img/gallery-many-jewelleries-tablet.jpg");
+  }
+}
+
+@media (max-width: $width-only-mobile) {
+  .gallery li:nth-child(7n+2) {
+    height: 87px;
+    grid-column-start: 1;
+    grid-column-end: 2;
+  }
+}
+
+.gallery li:nth-child(7n+3) {
+  width: 399px;
+  height: 412px;
+  grid-row-start: 1;
+  grid-row-end: 3;
+  grid-column-start: 2;
+  grid-column-end: 3;
+  background-image: url("../img/gallery-woman-with-jewellery.jpg");
+}
+
+@media (max-width: $width-only-tablet) {
+  .gallery li:nth-child(7n+3) {
+    width: auto;
+    height: 247px;
+    background-image: url("../img/gallery-woman-with-jewellery-tablet.jpg");
+  }
+}
+
+@media (max-width: $width-only-mobile) {
+  .gallery li:nth-child(7n+3) {
+    background-image: url("../img/gallery-woman-with-jewellery-mobile.jpg");
+  }
+}
+
+.gallery li:nth-child(7n+4) {
+  grid-column-start: 3;
+  grid-column-end: 4;
+  background-image: url("../img/gallery-bracelets.jpg");
+}
+
+@media (max-width: $width-only-tablet) {
+  .gallery li:nth-child(7n+4) {
+    background-image: url("../img/gallery-bracelets-tablet.jpg");
+  }
+}
+
+@media (max-width: $width-only-mobile) {
+  .gallery li:nth-child(7n+4) {
+    height: 87px;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 3;
+    grid-row-end: 4;
+    background-image: url("../img/gallery-gem-stones-tablet.jpg");
+  }
+}
+
+.gallery li:nth-child(7n+5) {
+  grid-column-start: 4;
+  grid-column-end: 5;
+  background-image: url("../img/gallery-rings.jpg");
+}
+
+@media (max-width: $width-only-tablet) {
+  .gallery li:nth-child(7n+5) {
+    background-image: url("../img/gallery-rings-tablet.jpg");
+  }
+}
+
+@media (max-width: $width-only-mobile) {
+  .gallery li:nth-child(7n+5) {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 3;
+    grid-row-end: 4;
+    background-image: url("../img/gallery-arms-with-rings-tablet.jpg");
+  }
+}
+
+.gallery li:nth-child(7n+6) {
+  grid-column-start: 3;
+  grid-column-end: 4;
+  grid-row-start: 2;
+  grid-row-end: 3;
+  background-image: url("../img/gallery-gem-stones.jpg");
+}
+
+@media (max-width: $width-only-tablet) {
+  .gallery li:nth-child(7n+6) {
+    background-image: url("../img/gallery-gem-stones-tablet.jpg");
+  }
+}
+
+@media (max-width: $width-only-mobile) {
+  .gallery li:nth-child(7n+6) {
+    display: none;
+  }
+}
+
+.gallery li:nth-child(7n+7) {
+  grid-column-start: 4;
+  grid-column-end: 5;
+  grid-row-start: 2;
+  grid-row-end: 3;
+  background-image: url("../img/gallery-arms-with-rings.jpg");
+}
+
+@media (max-width: $width-only-tablet) {
+  .gallery li:nth-child(7n+7) {
+    background-image: url("../img/gallery-arms-with-rings-tablet.jpg");
+  }
+}
+
+@media (max-width: $width-only-mobile) {
+  .gallery li:nth-child(7n+7) {
+    display: none;
+  }
+}

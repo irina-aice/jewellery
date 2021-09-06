@@ -1,31 +1,26 @@
 .button {
+  width: 100%;
+  min-height: 68px;
   font-size: inherit;
   line-height: inherit;
   font-weight: inherit;
-  border: 0;
-  background-color: $white;
+  color: $white;
+  background-color: $brown;
+  border: 1px solid $brown;
   cursor: pointer;
 
   &--apply {
-    width: 90%;
-    min-height: 68px;
     margin-bottom: 25px;
-    color: $white;
-    background-color: $brown;
   }
 
-  &--clear {
-    width: 90%;
-    min-height: 68px;
+  &--outline {
+    color: $darker-grey;
     border: 1px solid $brown;
+    background-color: $white;
   }
 
   &--login {
-    width: 100%;
-    min-height: 68px;
     margin-top: 50px;
-    color: $white;
-    background-color: $brown;
   }
 }
 
@@ -35,18 +30,12 @@
   }
 }
 
-.button--apply:hover {
+.button:hover {
   color: $darker-grey;
+  background-color: $white;
 }
 
-.button--clear:hover {
+.button--outline:hover {
+  color: $white;
   background-color: $brown;
-}
-
-.button--pagination:hover {
-  color: $brown;
-}
-
-.button--login:hover {
-  color: $darker-grey;
 }

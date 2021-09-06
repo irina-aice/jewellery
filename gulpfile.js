@@ -1,7 +1,7 @@
 const gulp = require("gulp");
 const plumber = require("gulp-plumber");
 const sourcemap = require("gulp-sourcemaps");
-const sass = require("gulp-sass");
+const sass = require("gulp-sass")(require("sass"));
 const postcss = require("gulp-postcss");
 const autoprefixer = require("autoprefixer");
 const csso = require("postcss-csso");
@@ -22,7 +22,7 @@ const styles = () => {
     .pipe(plumber())
     .pipe(sourcemap.init())
     .pipe(sass({
-      includePaths: ['node_modules']
+      includePaths: ["node_modules"]
     }))
     .pipe(postcss([
       autoprefixer(),
@@ -53,14 +53,17 @@ const scripts = () => {
     .pipe(sync.stream());
 }
 
+exports.scripts = scripts;
+
 const vendorScripts = () => {
-  return gulp.src("source/js/vendor/*.js")
+  return gulp.src([
+    "node_modules/micromodal/dist/micromodal.js",
+    "node_modules/swiper/swiper-bundle.js",
+  ])
     .pipe(concat("vendor.js"))
     .pipe(gulp.dest("build/js"))
     .pipe(sync.stream());
 }
-
-exports.scripts = scripts;
 
 //Images
 
@@ -122,7 +125,7 @@ const clean = () => {
 const server = (done) => {
   sync.init({
     server: {
-      baseDir: 'build',
+      baseDir: "build",
       routes: {
         "/node_modules": "node_modules"
       }

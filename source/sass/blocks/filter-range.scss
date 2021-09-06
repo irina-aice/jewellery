@@ -1,0 +1,41 @@
+.filter-range {
+  position: relative;
+  height: 1px;
+  width: 100%;
+  margin-bottom: 25px;
+  background-color: $beige;
+}
+
+.filter-range__inner {
+  position: absolute;
+  left: 45px;
+  height: 1px;
+  width: 120px;
+  background-color: $brown;
+}
+
+.filter-range__button {
+  position: absolute;
+  top: -7.5px;
+  width: 15px;
+  height: 15px;
+  padding: 0;
+  border: 0;
+  border-radius: 50%;
+  background-color: $brown;
+
+  &--min {
+    left: 0;
+  }
+
+  &--max {
+    right: 0;
+  }
+}
+
+.filter-range__tooltip {
+  position: absolute;
+  top: 25px;
+  left: -5px;
+  white-space: nowrap;
+}
