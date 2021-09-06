@@ -1,6 +1,18 @@
 .slider {
   width: 100%;
-  margin-top: 130px;
+  margin-top: 118px;
+}
+
+@media (max-width: $width-only-tablet) {
+  .slider {
+    margin-top: 69px;
+  }
+}
+
+@media (max-width: $width-only-mobile) {
+  .slider {
+    margin-top: 60px;
+  }
 }
 
 .slider__inner {
@@ -10,9 +22,21 @@
 .slider__pagination {
   display: flex;
   justify-content: center;
-  margin-top: 51px;
+  margin-top: 54px;
   font-size: 16px;
   line-height: 1;
+}
+
+@media (max-width: $width-only-tablet) {
+  .slider__pagination {
+    margin-top: 42px;
+  }
+}
+
+@media (max-width: $width-only-mobile) {
+  .slider__pagination {
+    margin-top: 34px;
+  }
 }
 
 .slider__number {
@@ -24,6 +48,12 @@
 
 .slider__number + .slider__number {
   margin-left: 15px;
+}
+
+@media (max-width: $width-only-tablet) {
+  .slider__number + .slider__number {
+    margin-left: 13px;
+  }
 }
 
 .slider__number--active {
@@ -42,8 +72,15 @@
   margin-bottom: 60px;
 }
 
+@media (max-width: $width-only-tablet) {
+  .slider__header {
+    margin-bottom: 55px;
+  }
+}
+
 @media (max-width: $width-only-mobile) {
   .slider__header {
+    margin-bottom: 45px;
     justify-content: center;
   }
 }
@@ -57,7 +94,13 @@
 }
 
 .slider__title {
-  margin-bottom: 15px;
+  margin-bottom: 24px;
+}
+
+@media (max-width: $width-only-tablet) {
+  .slider__title {
+    margin-bottom: 20px;
+  }
 }
 
 .slider__btn {
@@ -66,7 +109,14 @@
   border: 0;
   padding: 0;
   background-color: transparent;
+  transform: translateY(6px);
   cursor: pointer;
+}
+
+@media (max-width: $width-only-tablet) {
+  .slider__btn {
+    transform: translateY(8px);
+  }
 }
 
 @media (max-width: $width-only-mobile) {
@@ -75,10 +125,32 @@
   }
 }
 
-.slider__btn svg {
+.slider__arrow {
   color: $brown;
+
+  &--desktop {
+    display: block;
+  }
+
+  &--tablet {
+    display: none;
+  }
 }
 
-.slider__btn:hover svg {
+@media (max-width: $width-only-tablet) {
+  .slider__arrow {
+    &--desktop {
+      display: none;
+    }
+
+    &--tablet {
+      display: block;
+    }
+  }
+}
+
+.slider__arrow:hover {
   color: $darker-grey;
 }
+
+

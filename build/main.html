@@ -92,7 +92,7 @@
     <div class="promo promo--main">
       <div class="promo__image promo__image--main">
         <div class="container container--grid">
-          <h1>PERFECTION</h1>
+          <h1>Perfection</h1>
           <p>made to be yours</p>
         </div>
       </div>
@@ -102,19 +102,25 @@
       <div class="js-slider slider swiper-container">
         <div class="slider__header">
           <button class="js-slider-prev slider__btn" type="button" aria-label="prev slider">
-            <svg width="30" height="11">
+            <svg class="slider__arrow slider__arrow--desktop" width="30" height="11">
               <use xlink:href="img/sprite.svg#arrow-previous"></use>
+            </svg>
+            <svg class="slider__arrow slider__arrow--tablet" width="37" height="17">
+              <use xlink:href="img/sprite.svg#arrow-previous-tablet"></use>
             </svg>
           </button>
 
           <div class="slider__header-text">
             <h3 class="slider__title title">New In</h3>
-            <p><a href="#" class="link">Shop Now</a></p>
+            <p><a href="#" class="link link--slider">Shop Now</a></p>
           </div>
 
           <button class="js-slider-next slider__btn" type="button" aria-label="next slider">
-            <svg width="30" height="11">
+            <svg class="slider__arrow slider__arrow--desktop" width="30" height="11">
               <use xlink:href="img/sprite.svg#arrow-next"></use>
+            </svg>
+            <svg class="slider__arrow slider__arrow--tablet" width="37" height="17">
+              <use xlink:href="img/sprite.svg#arrow-next-tablet"></use>
             </svg>
           </button>
         </div>
@@ -330,15 +336,15 @@
             <div class="blog__information">
               <p>September 30, 2019</p>
               <h4>How to care for <br>your jewellery</h4>
-              <p><a href="#" class="link">Read Article</a></p>
+              <p><a href="#" class="link link--blog">Read Article</a></p>
             </div>
           </li>
           <li>
             <div class="blog__image blog__image--power"></div>
             <div class="blog__information">
               <p>September 23, 2019</p>
-              <h4>Power of crystals</h4>
-              <p><a href="#" class="link">Read Article</a></p>
+              <h4>Power of <br>crystals</h4>
+              <p><a href="#" class="link link--blog">Read Article</a></p>
             </div>
           </li>
           <li>
@@ -346,7 +352,7 @@
             <div class="blog__information blog__information--trends">
               <p>September 16, 2019</p>
               <h4>AW 19 trends</h4>
-              <p><a href="#" class="link">Read Article</a></p>
+              <p><a href="#" class="link link--blog">Read Article</a></p>
             </div>
           </li>
         </ul>
@@ -357,7 +363,7 @@
       <ul>
         <li class="questions__item">
           <div class="js-collapsible-title" aria-expanded="false">
-            <h4>What materials are the jewellery made of?</h4>
+            <h4>What materials are <br class="questions__break-mobile">the jewellery made of?</h4>
             <svg class="questions__icon questions__icon--open" width="17" height="10" fill="transparent">
               <use xlink:href="img/sprite.svg#arrow-down"></use>
             </svg>
@@ -372,7 +378,7 @@
         </li>
         <li class="questions__item">
           <div class="js-collapsible-title" aria-expanded="false">
-            <h4>Which countries do you deliver to?</h4>
+            <h4>Which countries <br class="questions__break-mobile">do you deliver to?</h4>
             <svg class="questions__icon questions__icon--open" width="17" height="10" fill="transparent">
               <use xlink:href="img/sprite.svg#arrow-down"></use>
             </svg>
@@ -387,7 +393,7 @@
         </li>
         <li class="questions__item">
           <div class="js-collapsible-title" aria-expanded="false">
-            <h4>What are the payment methods?</h4>
+            <h4>What are the <br class="questions__break-mobile">payment methods?</h4>
             <svg class="questions__icon questions__icon--open" width="17" height="10" fill="transparent">
               <use xlink:href="img/sprite.svg#arrow-down"></use>
             </svg>
@@ -402,7 +408,7 @@
         </li>
         <li class="questions__item">
           <div class="js-collapsible-title" aria-expanded="false">
-            <h4>Can I return the jewellery if it didn’t fit me?</h4>
+            <h4>Can I return the <br class="questions__break-mobile">jewellery if it didn’t fit me?</h4>
             <svg class="questions__icon questions__icon--open" width="17" height="10" fill="transparent">
               <use xlink:href="img/sprite.svg#arrow-down"></use>
             </svg>
@@ -441,8 +447,8 @@
       <div class="footer__grid">
         <div class="footer__information">
           <div>
-            <h3>The good stuff in your inbox </h3>
-            <p>News and updates from CH. No spam, we promise.</p>
+            <h3>The good stuff <br class="footer__break-mobile">in your inbox </h3>
+            <p>News and updates from CH. <br class="footer__break-mobile">No spam, we promise.</p>
           </div>
           <div class="footer__input">
             <label class="visually-hidden" for="mail">E-mail</label>
@@ -470,7 +476,7 @@
               <a href="#">Delivery</a>
             </li>
           </ul>
-          <ul class="footer__list footer__list--link">
+          <ul class="footer__list footer__list--link footer__list--center">
             <li>
               <a href="#">About CH</a>
             </li>
@@ -486,7 +492,7 @@
           </ul>
           <ul class="footer__list social">
             <li>
-              <a class="social__link" href="#">
+              <a class="social__link social__link--facebook" href="#">
                 <svg width="8" height="15">
                   <use xlink:href="img/sprite.svg#facebook"></use>
                 </svg>

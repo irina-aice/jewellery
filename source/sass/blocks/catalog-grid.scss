@@ -8,6 +8,13 @@
 @media (max-width: $width-only-tablet) {
   .catalog-grid {
     display: block;
+    margin-top: 50px;
+  }
+}
+
+@media (max-width: $width-only-mobile) {
+  .catalog-grid {
+    margin-top: 41px;
   }
 }
 

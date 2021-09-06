@@ -5,6 +5,12 @@
   const collapsibleContent = document.querySelectorAll('.js-collapsible-content');
 
   collapsibleContent.forEach((content) => {
+    const title = content.previousElementSibling;
+
+    if (title.getAttribute('aria-expanded') === 'true') {
+      return;
+    }
+
     content.hidden = true;
   });
 

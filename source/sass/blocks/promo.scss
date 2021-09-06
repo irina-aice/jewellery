@@ -83,13 +83,34 @@
   z-index: 1;
   margin: 0;
   font-size: 45px;
-  line-height: 130%; /* or 58px */
+  line-height: 115%;
+  text-transform: uppercase;
   letter-spacing: 0.03em;
+}
+
+.promo--catalog h1 {
+  letter-spacing: 0;
+  margin-bottom: 5px;
+}
+
+@media (max-width: $width-only-tablet) {
+  .promo h1 {
+    transform: translate(-9px, 2px);
+  }
+
+  .promo--catalog h1 {
+    transform: none;
+  }
 }
 
 @media (max-width: $width-only-mobile) {
   .promo h1 {
     font-size: 38px;
+    transform: translate(0, 5px);
+  }
+
+  .promo--catalog h1 {
+    transform: none;
   }
 }
 
@@ -103,9 +124,20 @@
   line-height: 130%; /* or 49px */
 }
 
+@media (max-width: $width-only-tablet) {
+  .promo p {
+    transform: translateX(-10px);
+  }
+
+  .promo--catalog p {
+    transform: none;
+  }
+}
+
 @media (max-width: $width-only-mobile) {
   .promo p {
     font-size: 34px;
+    transform: none;
   }
 }
 

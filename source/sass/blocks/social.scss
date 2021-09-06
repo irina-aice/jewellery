@@ -11,6 +11,20 @@
   display: inline-grid;
   grid-template-columns: min-content 1fr;
   grid-column-gap: 15px;
+
+  &--facebook {
+    grid-column-gap: 22px;
+  }
+}
+
+@media (max-width: $width-only-mobile) {
+  .social__link {
+    grid-column-gap: 0;
+
+    &--facebook {
+      grid-column-gap: 0;
+    }
+  }
 }
 
 .social__link svg {

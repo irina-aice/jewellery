@@ -1,9 +1,17 @@
 .main {
   padding-bottom: 80px;
+
+  &--catalog {
+    padding-bottom: 76px;
+  }
 }
 
 @media (max-width: $width-only-mobile) {
   .main {
     padding-bottom: 70px;
+
+    &--catalog {
+      padding-bottom: 66px;
+    }
   }
 }

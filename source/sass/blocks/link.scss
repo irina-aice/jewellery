@@ -11,6 +11,12 @@
   }
 }
 
+@media (max-width: $width-only-tablet) {
+  .link--slider {
+    padding-bottom: 3px;
+  }
+}
+
 .link:hover {
   color: $brown;
   border: 0;

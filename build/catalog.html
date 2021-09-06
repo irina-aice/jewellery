@@ -88,11 +88,11 @@
     </div>
   </header>
 
-  <main class="main">
+  <main class="main main--catalog">
     <div class="promo promo--catalog">
       <div class="promo__image promo__image--catalog">
         <div class="container container--grid container--catalog">
-          <h1>ALL JEWELLERY</h1>
+          <h1>All jewellery</h1>
           <p>Discover picks of fashion's finest trends in our jewellery catalog</p>
         </div>
       </div>
@@ -114,7 +114,7 @@
 
             <ul>
               <li class="filter__group">
-                <div class="filter__group-title js-collapsible-title" aria-expanded="false">
+                <div class="filter__group-title js-collapsible-title" role="button" aria-expanded="true">
                   <h3>Product</h3>
                   <svg class="filter__group-icon" width="15" height="8" fill="transparent">
                     <use xlink:href="img/sprite.svg#arrow-down"></use>
@@ -182,7 +182,7 @@
                 </div>
               </li>
               <li class="filter__group">
-                <div class="filter__group-title js-collapsible-title" aria-expanded="false">
+                <div class="filter__group-title js-collapsible-title" aria-expanded="true">
                   <h3>Price</h3>
                   <svg class="filter__group-icon" width="15" height="8" fill="transparent">
                     <use xlink:href="img/sprite.svg#arrow-down"></use>
@@ -481,8 +481,8 @@
       <div class="footer__grid">
         <div class="footer__information">
           <div>
-            <h3>The good stuff in your inbox </h3>
-            <p>News and updates from CH. No spam, we promise.</p>
+            <h3>The good stuff <br class="footer__break-mobile">in your inbox </h3>
+            <p>News and updates from CH. <br class="footer__break-mobile">No spam, we promise.</p>
           </div>
           <div class="footer__input">
             <label class="visually-hidden" for="mail">E-mail</label>
@@ -510,7 +510,7 @@
               <a href="#">Delivery</a>
             </li>
           </ul>
-          <ul class="footer__list footer__list--link">
+          <ul class="footer__list footer__list--link footer__list--center">
             <li>
               <a href="#">About CH</a>
             </li>
@@ -526,7 +526,7 @@
           </ul>
           <ul class="footer__list social">
             <li>
-              <a class="social__link" href="#">
+              <a class="social__link social__link--facebook" href="#">
                 <svg width="8" height="15">
                   <use xlink:href="img/sprite.svg#facebook"></use>
                 </svg>

@@ -1,6 +1,18 @@
 .contacts {
   @include container;
-  margin-bottom: 60px;
+  margin-bottom: 131px;
+}
+
+@media (max-width: $width-only-tablet) {
+  .contacts {
+    margin-bottom: 77px;
+  }
+}
+
+@media (max-width: $width-only-mobile) {
+  .contacts {
+    margin-bottom: 69px;
+  }
 }
 
 .contacts div {
@@ -16,4 +28,10 @@
 
 .contacts__link {
   margin: 43px 0 0 0;
+}
+
+@media (max-width: $width-only-tablet) {
+  .contacts__link {
+    margin-top: 30px;
+  }
 }

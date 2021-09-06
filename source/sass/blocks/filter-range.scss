@@ -2,8 +2,22 @@
   position: relative;
   height: 1px;
   width: 100%;
-  margin-bottom: 25px;
+  margin-top: 7px;
+  margin-bottom: 23px;
   background-color: $beige;
+}
+
+@media (max-width: $width-only-tablet) {
+  .filter-range {
+    margin-top: 11px;
+    margin-bottom: 35px;
+  }
+}
+
+@media (max-width: $width-only-mobile) {
+  .filter-range {
+    margin-bottom: 31px;
+  }
 }
 
 .filter-range__inner {
@@ -12,6 +26,20 @@
   height: 1px;
   width: 120px;
   background-color: $brown;
+}
+
+@media (max-width: $width-only-tablet) {
+  .filter-range__inner {
+    left: 52px;
+    width: 192px;
+  }
+}
+
+@media (max-width: $width-only-mobile) {
+  .filter-range__inner {
+    left: 25px;
+    width: 155px;
+  }
 }
 
 .filter-range__button {
@@ -33,9 +61,26 @@
   }
 }
 
+@media (max-width: $width-only-tablet) {
+  .filter-range__button {
+    width: 18px;
+    height: 18px;
+    top: -9px;
+  }
+}
+
 .filter-range__tooltip {
   position: absolute;
   top: 25px;
-  left: -5px;
+  left: -10px;
+  font-size: 14px;
+  line-height: 1;
   white-space: nowrap;
+}
+
+@media (max-width: $width-only-tablet) {
+  .filter-range__tooltip {
+    top: 29px;
+    left: -7px;
+  }
 }

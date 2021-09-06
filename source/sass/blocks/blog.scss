@@ -1,6 +1,18 @@
 .blog {
   @include container;
-  padding-top: 114px;
+  padding-top: 117px;
+}
+
+@media (max-width: $width-only-tablet) {
+  .blog {
+    padding-top: 67px;
+  }
+}
+
+@media (max-width: $width-only-mobile) {
+  .blog {
+    padding-top: 57px;
+  }
 }
 
 .blog p {
@@ -22,6 +34,14 @@
   .blog__list {
     grid-template-columns: 1fr;
     grid-template-rows: repeat(3, 1fr);
+    grid-row-gap: 50px;
+  }
+}
+
+@media (max-width: $width-only-mobile) {
+  .blog__list {
+    margin-top: 55px;
+    grid-row-gap: 40px;
   }
 }
 
@@ -55,6 +75,7 @@
   grid-row-start: 1;
   grid-row-end: 3;
   display: grid;
+  grid-row-gap: 30px;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(2, 1fr);
 }
@@ -82,6 +103,10 @@
   .blog__list li:nth-child(3n+3) {
     grid-template-columns: 1fr;
     grid-template-rows: repeat(2, 1fr);
+  }
+
+  .blog__list li:nth-child(3n+3) {
+    grid-row-gap: 0;
   }
 }
 
@@ -143,6 +168,8 @@
 
 @media (max-width: $width-only-mobile) {
   .blog__image--power {
+    grid-column-start: 1;
+    grid-column-end: 2;
     background-image: url("../img/blog-power-mobile.jpg");
 
     @media (min-resolution: 2dppx) {
@@ -190,8 +217,8 @@
 .blog__information {
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
+  padding-top: 67px;
   background-color: $beige;
 
   &--trends {
@@ -205,6 +232,7 @@
 
 @media (max-width: $width-only-tablet) {
   .blog__information--trends {
+    padding-top: 84px;
     grid-column-start: 2;
     grid-column-end: 3;
     grid-row-start: 1;
@@ -214,11 +242,21 @@
 
 @media (max-width: $width-only-mobile) {
   .blog__information {
+    padding-top: 44px;
     grid-column-start: 1;
     grid-column-end: 2;
     grid-row-start: 2;
     grid-row-end: 3;
+
+    &--trends {
+      padding-top: 62px;
+    }
   }
+}
+
+.blog__information p {
+  margin-top: 0;
+  margin-bottom: 10px;
 }
 
 .blog__information p:first-child {
@@ -228,8 +266,10 @@
 
 .blog__information h4 {
   @include font-cormorant;
-  margin: 0;
+  margin: 0 0 37px;
   font-weight: 600;
   font-size: 26px;
+  line-height: 135%;
+  text-align: center;
   color: $black;
 }

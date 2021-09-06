@@ -1,6 +1,6 @@
 .gallery {
   @include reset-list;
-  margin-top: 60px;
+  margin-top: 63px;
   display: grid;
   grid-template-columns: 1fr max-content 1fr 1fr;
   grid-template-rows: auto auto;
@@ -10,6 +10,8 @@
 
 @media (max-width: $width-only-tablet) {
   .gallery {
+    margin-top: 66px;
+    grid-template-columns: 4fr 7fr 4fr 4fr;
     grid-column-gap: 16px;
     grid-row-gap: 21px;
   }
@@ -17,7 +19,7 @@
 
 @media (max-width: $width-only-mobile) {
   .gallery {
-    margin-top: 46px;
+    margin-top: 54px;
     grid-column-gap: 24px;
     grid-row-gap: 27px;
     grid-template-columns: 1fr 1fr;
@@ -55,6 +57,7 @@
 
 @media (max-width: $width-only-tablet) {
   .gallery li:nth-child(7n+2) {
+    height: 87px;
     background-image: url("../img/gallery-many-jewelleries-tablet.jpg");
   }
 }
@@ -80,7 +83,7 @@
 @media (max-width: $width-only-tablet) {
   .gallery li:nth-child(7n+3) {
     width: auto;
-    height: 247px;
+    height: 240px;
     background-image: url("../img/gallery-woman-with-jewellery-tablet.jpg");
   }
 }

@@ -1,5 +1,5 @@
 .pagination {
-  padding-top: 40px;
+  padding-top: 36px;
   border-top: 1px solid $light-grey;
 }
 
@@ -41,12 +41,12 @@
 }
 
 .pagination__content li + li {
-  margin-left: 15px;
+  margin-left: 13px;
 }
 
 @media (max-width: $width-only-mobile) {
   .pagination__content li + li {
-    margin-left: 25px;
+    margin-left: 23px;
   }
 }
 
@@ -55,6 +55,15 @@
 
   &--active {
     color: $darker-grey;
+  }
+
+  &--prev,
+  &--next {
+    min-width: 70px;
+  }
+
+  &--next {
+    text-align: right;
   }
 }
 
