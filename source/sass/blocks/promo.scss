@@ -91,6 +91,7 @@
 .promo--catalog h1 {
   letter-spacing: 0;
   margin-bottom: 5px;
+  font-size: 34px;
 }
 
 @media (max-width: $width-only-tablet) {
@@ -139,10 +140,6 @@
     font-size: 34px;
     transform: none;
   }
-}
-
-.promo--catalog h1 {
-  font-size: 34px;
 }
 
 .promo--catalog p {

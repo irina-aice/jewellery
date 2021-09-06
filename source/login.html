@@ -12,22 +12,18 @@
   <link rel="preload" href="fonts/cormorant-garamond-regular-italic.woff2" as="font" crossorigin="anonymous">
   <link rel="preload" href="fonts/cormorant-garamond-semibold.woff2" as="font" crossorigin="anonymous">
   <link rel="stylesheet" href="css/style.min.css">
-
-  <script type="module">
-    document.documentElement.classList.remove('no-js');
-    document.documentElement.classList.add('js');
-  </script>
 </head>
 <body>
   <header class="header header--static">
     <div class="header__grid">
-      <svg class="header__logo" width="66" height="66">
-        <use xlink:href="img/sprite.svg#logo"></use>
-      </svg>
+      <a class="header__logo" href="/index.html">
+        <svg width="66" height="66">
+          <use xlink:href="img/sprite.svg#logo"></use>
+        </svg>
+      </a>
     </div>
-    <p><a href="main.html">Вернуться на главную страницу</a></p>
+    <p><a href="main.html">Back to home</a></p>
   </header>
-
   <main>
     <div class="modal modal--open modal--static" id="modal-login" aria-hidden="true">
       <div class="modal__overlay" tabindex="-1" data-micromodal-close>
@@ -45,13 +41,13 @@
                 <li class="form-modal__item">
                   <label>
                     <span class="visually-hidden">email</span>
-                    <input class="js-form-email" type="email" name="email" placeholder="Your E-mail">
+                    <input type="email" name="email" placeholder="Your E-mail" required>
                   </label>
                 </li>
                 <li class="form-modal__item">
                   <label>
                     <span class="visually-hidden">password</span>
-                    <input type="password" name="password" placeholder="Password">
+                    <input type="password" name="password" placeholder="Password" required>
                   </label>
                   <p><a href="#">Forgot your password?</a></p>
                 </li>
@@ -67,7 +63,10 @@
       </div>
     </div>
   </main>
-
+  <script type="module">
+    document.documentElement.classList.remove('no-js');
+    document.documentElement.classList.add('js');
+  </script>
   <script src="js/vendor.js"></script>
   <script src="js/main.js"></script>
 </body>

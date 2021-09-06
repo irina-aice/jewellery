@@ -127,8 +127,6 @@
 }
 
 .header__logo {
-  width: 66px;
-  height: 66px;
   margin-bottom: 19px;
   color: $brown;
 }
@@ -140,8 +138,14 @@
   }
 }
 
+.header__logo svg {
+  width: 66px;
+  height: 66px;
+  color: currentColor;
+}
+
 @media (max-width: $width-only-mobile) {
-  .header__logo {
+  .header__logo svg {
     width: 52px;
     height: 52px;
   }

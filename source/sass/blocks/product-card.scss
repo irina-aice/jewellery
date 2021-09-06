@@ -20,7 +20,7 @@
 
 @media (max-width: $width-only-mobile) {
   .product-card__information {
-    padding-top: 16px; // pp fix for main page
+    padding-top: 16px;
   }
 }
 
@@ -31,6 +31,7 @@
 
 .product-card__information span {
   display: inline-block;
+  vertical-align: baseline;
   font-weight: 700;
   font-size: 14px;
   line-height: 130%;/* or 18px */

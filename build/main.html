@@ -12,11 +12,6 @@
   <link rel="preload" href="fonts/cormorant-garamond-regular-italic.woff2" as="font" crossorigin="anonymous">
   <link rel="preload" href="fonts/cormorant-garamond-semibold.woff2" as="font" crossorigin="anonymous">
   <link rel="stylesheet" href="css/style.min.css">
-
-  <script type="module">
-    document.documentElement.classList.remove('no-js');
-    document.documentElement.classList.add('js');
-  </script>
 </head>
 <body>
   <header class="js-header header">
@@ -30,9 +25,11 @@
           <use xlink:href="img/sprite.svg#icon-search"></use>
         </svg>
       </label>
-      <svg class="header__logo" width="66" height="66">
-        <use xlink:href="img/sprite.svg#logo"></use>
-      </svg>
+      <a class="header__logo" href="/index.html">
+        <svg width="66" height="66">
+          <use xlink:href="img/sprite.svg#logo"></use>
+        </svg>
+      </a>
       <div class="nav-user">
         <ul>
           <li class="nav-user__item nav-user__item--login">
@@ -87,7 +84,6 @@
       </nav>
     </div>
   </header>
-
   <main>
     <div class="promo promo--main">
       <div class="promo__image promo__image--main">
@@ -97,7 +93,6 @@
         </div>
       </div>
     </div>
-
     <div class="slider-wrapper">
       <div class="js-slider slider swiper-container">
         <div class="slider__header">
@@ -109,12 +104,10 @@
               <use xlink:href="img/sprite.svg#arrow-previous-tablet"></use>
             </svg>
           </button>
-
           <div class="slider__header-text">
             <h3 class="slider__title title">New In</h3>
-            <p><a href="#" class="link link--slider">Shop Now</a></p>
+            <p><a href="/catalog.html" class="link link--slider">Shop Now</a></p>
           </div>
-
           <button class="js-slider-next slider__btn" type="button" aria-label="next slider">
             <svg class="slider__arrow slider__arrow--desktop" width="30" height="11">
               <use xlink:href="img/sprite.svg#arrow-next"></use>
@@ -124,7 +117,6 @@
             </svg>
           </button>
         </div>
-
         <div class="slider__inner swiper-wrapper">
           <div class="swiper-slide">
             <div class="product-card">
@@ -319,11 +311,9 @@
             </div>
           </div>
         </div>
-
         <div class="js-slider-pagination slider__pagination"></div>
       </div>
     </div>
-
     <section class="blog">
       <h3 class="title title--blog">Blog</h3>
       <p>
@@ -362,7 +352,7 @@
       <h3>Frequently asked questions</h3>
       <ul>
         <li class="questions__item">
-          <div class="js-collapsible-title" aria-expanded="false">
+          <div class="js-collapsible-title" role="button" aria-expanded="false">
             <h4>What materials are <br class="questions__break-mobile">the jewellery made of?</h4>
             <svg class="questions__icon questions__icon--open" width="17" height="10" fill="transparent">
               <use xlink:href="img/sprite.svg#arrow-down"></use>
@@ -377,7 +367,7 @@
           </div>
         </li>
         <li class="questions__item">
-          <div class="js-collapsible-title" aria-expanded="false">
+          <div class="js-collapsible-title" role="button" aria-expanded="false">
             <h4>Which countries <br class="questions__break-mobile">do you deliver to?</h4>
             <svg class="questions__icon questions__icon--open" width="17" height="10" fill="transparent">
               <use xlink:href="img/sprite.svg#arrow-down"></use>
@@ -392,7 +382,7 @@
           </div>
         </li>
         <li class="questions__item">
-          <div class="js-collapsible-title" aria-expanded="false">
+          <div class="js-collapsible-title" role="button" aria-expanded="false">
             <h4>What are the <br class="questions__break-mobile">payment methods?</h4>
             <svg class="questions__icon questions__icon--open" width="17" height="10" fill="transparent">
               <use xlink:href="img/sprite.svg#arrow-down"></use>
@@ -407,7 +397,7 @@
           </div>
         </li>
         <li class="questions__item">
-          <div class="js-collapsible-title" aria-expanded="false">
+          <div class="js-collapsible-title" role="button" aria-expanded="false">
             <h4>Can I return the <br class="questions__break-mobile">jewellery if it didn’t fit me?</h4>
             <svg class="questions__icon questions__icon--open" width="17" height="10" fill="transparent">
               <use xlink:href="img/sprite.svg#arrow-down"></use>
@@ -441,7 +431,6 @@
       </ul>
     </section>
   </main>
-
   <footer class="footer">
     <div class="container">
       <div class="footer__grid">
@@ -452,7 +441,7 @@
           </div>
           <div class="footer__input">
             <label class="visually-hidden" for="mail">E-mail</label>
-            <input id="mail" type="email" placeholder="Your E-mail">
+            <input id="mail" type="email" placeholder="Your E-mail" required>
             <a href="#">
               <span>Sign Up</span>
               <svg width="30" height="11">
@@ -528,7 +517,6 @@
       </div>
     </div>
   </footer>
-
   <div class="modal" id="modal-login" aria-hidden="true">
     <div class="modal__overlay" tabindex="-1" data-micromodal-close>
       <div class="modal__container" role="dialog" aria-modal="true" aria-labelledby="modal-login-title">
@@ -545,13 +533,13 @@
               <li class="form-modal__item">
                 <label>
                   <span class="visually-hidden">email</span>
-                  <input class="js-form-email" type="email" name="email" placeholder="Your E-mail">
+                  <input type="email" name="email" placeholder="Your E-mail" required>
                 </label>
               </li>
               <li class="form-modal__item">
                 <label>
                   <span class="visually-hidden">password</span>
-                  <input type="password" name="password" placeholder="Password">
+                  <input type="password" name="password" placeholder="Password" required>
                 </label>
                 <p><a href="#">Forgot your password?</a></p>
               </li>
@@ -566,7 +554,10 @@
       </div>
     </div>
   </div>
-
+  <script type="module">
+    document.documentElement.classList.remove('no-js');
+    document.documentElement.classList.add('js');
+  </script>
   <script src="js/vendor.js"></script>
   <script src="js/main.js"></script>
 </body>

@@ -7,7 +7,7 @@
     return false;
   }
 
-  const emailField = form.querySelector('.js-form-email');
+  const emailField = form.querySelector('[name="email"]');
 
   if (!emailField) {
     return false;

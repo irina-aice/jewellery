@@ -12,11 +12,6 @@
   <link rel="preload" href="fonts/cormorant-garamond-regular.woff2" as="font" crossorigin="anonymous">
   <link rel="preload" href="fonts/cormorant-garamond-semibold.woff2" as="font" crossorigin="anonymous">
   <link rel="stylesheet" href="css/style.min.css">
-
-  <script type="module">
-    document.documentElement.classList.remove('no-js');
-    document.documentElement.classList.add('js');
-  </script>
 </head>
 <body>
   <header class="js-header header">
@@ -30,9 +25,11 @@
           <use xlink:href="img/sprite.svg#icon-search"></use>
         </svg>
       </label>
-      <svg class="header__logo" width="66" height="66">
-        <use xlink:href="img/sprite.svg#logo"></use>
-      </svg>
+      <a class="header__logo" href="/index.html">
+        <svg width="66" height="66">
+          <use xlink:href="img/sprite.svg#logo"></use>
+        </svg>
+      </a>
       <div class="nav-user">
         <ul>
           <li class="nav-user__item nav-user__item--login">
@@ -87,7 +84,6 @@
       </nav>
     </div>
   </header>
-
   <main class="main main--catalog">
     <div class="promo promo--catalog">
       <div class="promo__image promo__image--catalog">
@@ -98,23 +94,19 @@
       </div>
     </div>
     <div class="catalog-grid container">
-
       <button class="js-filter-show catalog-grid__filter-show button" type="button">Filter</button>
-
       <div class="filter" id="filter">
         <div class="filter__overlay" data-micromodal-close>
           <div class="visually-hidden">filter</div>
-
           <form class="filter__form" action="https://echo.htmlacademy.ru/" method="get">
             <button class="filter__close" data-micromodal-close aria-label="close filter modal" type="button">
               <svg width="32" height="32" data-micromodal-close>
                 <use xlink:href="img/sprite.svg#filter-close" data-micromodal-close></use>
               </svg>
             </button>
-
             <ul>
               <li class="filter__group">
-                <div class="filter__group-title js-collapsible-title" aria-expanded="true">
+                <div class="filter__group-title js-collapsible-title" role="button" aria-expanded="true">
                   <h3>Product</h3>
                   <svg class="filter__group-icon" width="15" height="8" fill="transparent">
                     <use xlink:href="img/sprite.svg#arrow-down"></use>
@@ -123,26 +115,26 @@
                 <div class="filter__group-content js-collapsible-content">
                   <ul>
                     <li>
-                      <input class="filter__checkbox visually-hidden" type="checkbox" name="product[]" id="filter-necklaces" value="necklaces" checked>
+                      <input class="visually-hidden" type="checkbox" name="product[]" id="filter-necklaces" value="necklaces" checked>
                       <label for="filter-necklaces">Necklaces</label>
                     </li>
                     <li>
-                      <input class="filter__checkbox visually-hidden" type="checkbox" name="product[]" id="filter-chokers" value="chokers" checked>
+                      <input class="visually-hidden" type="checkbox" name="product[]" id="filter-chokers" value="chokers" checked>
                       <label for="filter-chokers">Chokers</label>
                     </li>
                     <li>
-                      <input class="filter__checkbox visually-hidden" type="checkbox" name="product[]" id="filter-rings" value="rings">
+                      <input class="visually-hidden" type="checkbox" name="product[]" id="filter-rings" value="rings">
                       <label for="filter-rings">Rings</label>
                     </li>
                     <li>
-                      <input class="filter__checkbox visually-hidden" type="checkbox" name="product[]" id="filter-earrings" value="earrings" checked>
+                      <input class="visually-hidden" type="checkbox" name="product[]" id="filter-earrings" value="earrings" checked>
                       <label for="filter-earrings">Earrings</label>
                     </li>
                   </ul>
                 </div>
               </li>
               <li class="filter__group">
-                <div class="filter__group-title js-collapsible-title" aria-expanded="false">
+                <div class="filter__group-title js-collapsible-title" role="button" aria-expanded="false">
                   <h3>Material</h3>
                   <svg class="filter__group-icon" width="15" height="8" fill="transparent">
                     <use xlink:href="img/sprite.svg#arrow-down"></use>
@@ -151,18 +143,18 @@
                 <div class="filter__group-content js-collapsible-content">
                   <ul>
                     <li>
-                      <input class="filter__checkbox visually-hidden" type="checkbox" name="material[]" id="filter-gold" value="gold">
+                      <input class="visually-hidden" type="checkbox" name="material[]" id="filter-gold" value="gold">
                       <label for="filter-gold">Gold</label>
                     </li>
                     <li>
-                      <input class="filter__checkbox visually-hidden" type="checkbox" name="material[]" id="filter-silver" value="silver">
+                      <input class="visually-hidden" type="checkbox" name="material[]" id="filter-silver" value="silver">
                       <label for="filter-silver">Silver</label>
                     </li>
                   </ul>
                 </div>
               </li>
               <li class="filter__group">
-                <div class="filter__group-title js-collapsible-title" aria-expanded="false">
+                <div class="filter__group-title js-collapsible-title" role="button" aria-expanded="false">
                   <h3>Collection</h3>
                   <svg class="filter__group-icon" width="15" height="8" fill="transparent">
                     <use xlink:href="img/sprite.svg#arrow-down"></use>
@@ -171,18 +163,18 @@
                 <div class="filter__group-content js-collapsible-content">
                   <ul>
                     <li>
-                      <input class="filter__checkbox visually-hidden" type="checkbox" name="collection[]" id="filter-flamingo" value="flamingo">
+                      <input class="visually-hidden" type="checkbox" name="collection[]" id="filter-flamingo" value="flamingo">
                       <label for="filter-flamingo">Pink flamingo</label>
                     </li>
                     <li>
-                      <input class="filter__checkbox visually-hidden" type="checkbox" name="collection[]" id="filter-dreams" value="dreams">
+                      <input class="visually-hidden" type="checkbox" name="collection[]" id="filter-dreams" value="dreams">
                       <label for="filter-dreams">Dreams</label>
                     </li>
                   </ul>
                 </div>
               </li>
               <li class="filter__group">
-                <div class="filter__group-title js-collapsible-title" aria-expanded="true">
+                <div class="filter__group-title js-collapsible-title" role="button" aria-expanded="true">
                   <h3>Price</h3>
                   <svg class="filter__group-icon" width="15" height="8" fill="transparent">
                     <use xlink:href="img/sprite.svg#arrow-down"></use>
@@ -194,7 +186,6 @@
                       <button class="filter-range__button filter-range__button--min" type="button">
                         <span class="filter-range__tooltip">$ 55</span>
                       </button>
-
                       <button class="filter-range__button filter-range__button--max" type="button">
                         <span class="filter-range__tooltip">$ 155</span>
                       </button>
@@ -203,7 +194,6 @@
                 </div>
               </li>
             </ul>
-
             <div class="filter__button-wrapper">
               <button class="button button--apply" type="submit">Apply</button>
               <button class="button button--outline" type="reset">Clear All</button>
@@ -211,7 +201,6 @@
           </form>
         </div>
       </div>
-
       <section class="product-catalog">
         <h2 class="visually-hidden">Jewellery catalog</h2>
         <ul class="product-catalog__list">
@@ -556,10 +545,8 @@
     </div>
     <div class="pagination">
       <div class="pagination__grid container">
-
         <div class="pagination__content">
           <a href="#" class="pagination__link pagination__link--prev pagination__link--active">Previous</a>
-
           <ul>
             <li>
               <a href="#" class="pagination__link pagination__link--active">1</a>
@@ -577,13 +564,11 @@
               <a href="#" class="pagination__link">5</a>
             </li>
           </ul>
-
           <a href="#" class="pagination__link pagination__link--next pagination__link--active">Next</a>
         </div>
       </div>
     </div>
   </main>
-
   <footer class="footer">
     <div class="container">
       <div class="footer__grid">
@@ -594,7 +579,7 @@
           </div>
           <div class="footer__input">
             <label class="visually-hidden" for="mail">E-mail</label>
-            <input id="mail" type="email" placeholder="Your E-mail">
+            <input id="mail" type="email" placeholder="Your E-mail" required>
             <a href="#">
               <span>Sign Up</span>
               <svg width="30" height="11">
@@ -670,7 +655,6 @@
       </div>
     </div>
   </footer>
-
   <div class="modal" id="modal-login" aria-hidden="true">
     <div class="modal__overlay" tabindex="-1" data-micromodal-close>
       <div class="modal__container" role="dialog" aria-modal="true" aria-labelledby="modal-login-title">
@@ -687,13 +671,13 @@
               <li class="form-modal__item">
                 <label>
                   <span class="visually-hidden">email</span>
-                  <input class="js-form-email" type="email" name="email" placeholder="Your E-mail">
+                  <input type="email" name="email" placeholder="Your E-mail" required>
                 </label>
               </li>
               <li class="form-modal__item">
                 <label>
                   <span class="visually-hidden">password</span>
-                  <input type="password" name="password" placeholder="Password">
+                  <input type="password" name="password" placeholder="Password" required>
                 </label>
                 <p><a href="#">Forgot your password?</a></p>
               </li>
@@ -708,7 +692,10 @@
       </div>
     </div>
   </div>
-
+  <script type="module">
+    document.documentElement.classList.remove('no-js');
+    document.documentElement.classList.add('js');
+  </script>
   <script src="js/vendor.js"></script>
   <script src="js/main.js"></script>
 </body>
