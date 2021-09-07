@@ -3,7 +3,9 @@
   color: inherit;
 }
 
-.product-card a:hover .product-card__information {
+.product-card a:hover .product-card__information,
+.product-card a:active .product-card__information,
+.product-card a:focus .product-card__information {
   color: $brown;
 }
 

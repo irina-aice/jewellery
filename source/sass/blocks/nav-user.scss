@@ -45,7 +45,9 @@
   color: inherit;
 }
 
-.nav-user__item a:hover {
+.nav-user__item a:hover,
+.nav-user__item a:active,
+.nav-user__item a:focus {
   color: $brown;
 }
 
@@ -56,7 +58,6 @@
 @media (max-width: $width-only-tablet) {
   .nav-user__item svg {
     display: block;
-    //color: $darker-grey;
     color: $white;
   }
 

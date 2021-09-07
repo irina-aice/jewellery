@@ -76,6 +76,8 @@
   }
 }
 
-.pagination__link:hover {
+.pagination__link:hover,
+.pagination__link:active,
+.pagination__link:focus {
   color: $brown;
 }

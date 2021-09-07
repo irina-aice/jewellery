@@ -236,7 +236,9 @@
   cursor: pointer;
 }
 
-.filter__close:hover {
+.filter__close:hover,
+.filter__close:active,
+.filter__close:focus {
   color: $brown;
 }
 

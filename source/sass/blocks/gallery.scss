@@ -39,12 +39,20 @@
   grid-row-end: 2;
   height: 230px;
   background-image: url("../img/gallery-square-earrings-desktop.jpg");
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/gallery-square-earrings-desktop@2x.jpg");
+  }
 }
 
 @media (max-width: $width-only-tablet) {
   .gallery li:nth-child(7n+1) {
     height: 133px;
     background-image: url("../img/gallery-square-earrings-tablet.jpg");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/gallery-square-earrings-tablet@2x.jpg");
+    }
   }
 }
 
@@ -53,12 +61,20 @@
   grid-row-start: 2;
   grid-row-end: 3;
   background-image: url("../img/gallery-many-jewelleries.jpg");
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/gallery-many-jewelleries@2x.jpg");
+  }
 }
 
 @media (max-width: $width-only-tablet) {
   .gallery li:nth-child(7n+2) {
     height: 87px;
     background-image: url("../img/gallery-many-jewelleries-tablet.jpg");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/gallery-many-jewelleries-tablet@2x.jpg");
+    }
   }
 }
 
@@ -78,6 +94,10 @@
   grid-column-start: 2;
   grid-column-end: 3;
   background-image: url("../img/gallery-woman-with-jewellery.jpg");
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/gallery-woman-with-jewellery@2x.jpg");
+  }
 }
 
 @media (max-width: $width-only-tablet) {
@@ -85,12 +105,20 @@
     width: auto;
     height: 240px;
     background-image: url("../img/gallery-woman-with-jewellery-tablet.jpg");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/gallery-woman-with-jewellery-tablet@2x.jpg");
+    }
   }
 }
 
 @media (max-width: $width-only-mobile) {
   .gallery li:nth-child(7n+3) {
     background-image: url("../img/gallery-woman-with-jewellery-mobile.jpg");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/gallery-woman-with-jewellery-mobile@2x.jpg");
+    }
   }
 }
 
@@ -98,11 +126,19 @@
   grid-column-start: 3;
   grid-column-end: 4;
   background-image: url("../img/gallery-bracelets.jpg");
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/gallery-bracelets@2x.jpg");
+  }
 }
 
 @media (max-width: $width-only-tablet) {
   .gallery li:nth-child(7n+4) {
     background-image: url("../img/gallery-bracelets-tablet.jpg");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/gallery-bracelets-tablet@2x.jpg");
+    }
   }
 }
 
@@ -114,6 +150,10 @@
     grid-row-start: 3;
     grid-row-end: 4;
     background-image: url("../img/gallery-gem-stones-tablet.jpg");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/gallery-gem-stones-tablet@2x.jpg");
+    }
   }
 }
 
@@ -121,11 +161,19 @@
   grid-column-start: 4;
   grid-column-end: 5;
   background-image: url("../img/gallery-rings.jpg");
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/gallery-rings@2x.jpg");
+  }
 }
 
 @media (max-width: $width-only-tablet) {
   .gallery li:nth-child(7n+5) {
     background-image: url("../img/gallery-rings-tablet.jpg");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/gallery-rings-tablet@2x.jpg");
+    }
   }
 }
 
@@ -136,6 +184,10 @@
     grid-row-start: 3;
     grid-row-end: 4;
     background-image: url("../img/gallery-arms-with-rings-tablet.jpg");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/gallery-arms-with-rings-tablet@2x.jpg");
+    }
   }
 }
 
@@ -145,11 +197,19 @@
   grid-row-start: 2;
   grid-row-end: 3;
   background-image: url("../img/gallery-gem-stones.jpg");
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/gallery-gem-stones@2x.jpg");
+  }
 }
 
 @media (max-width: $width-only-tablet) {
   .gallery li:nth-child(7n+6) {
     background-image: url("../img/gallery-gem-stones-tablet.jpg");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/gallery-gem-stones-tablet@2x.jpg");
+    }
   }
 }
 
@@ -165,11 +225,19 @@
   grid-row-start: 2;
   grid-row-end: 3;
   background-image: url("../img/gallery-arms-with-rings.jpg");
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/gallery-arms-with-rings@2x.jpg");
+  }
 }
 
 @media (max-width: $width-only-tablet) {
   .gallery li:nth-child(7n+7) {
     background-image: url("../img/gallery-arms-with-rings-tablet.jpg");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/gallery-arms-with-rings-tablet@2x.jpg");
+    }
   }
 }
 

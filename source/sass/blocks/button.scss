@@ -30,12 +30,16 @@
   }
 }
 
-.button:hover {
+.button:hover,
+.button:active,
+.button:focus {
   color: $darker-grey;
   background-color: $white;
 }
 
-.button--outline:hover {
+.button--outline:hover,
+.button--outline:active,
+.button--outline:focus {
   color: $white;
   background-color: $brown;
 }

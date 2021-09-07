@@ -73,7 +73,9 @@
   color: $darker-grey;
 }
 
-.header--static a:hover {
+.header--static a:hover,
+.header--static a:active,
+.header--static a:focus {
   color: $brown;
 }
 
@@ -139,6 +141,7 @@
 }
 
 .header__logo svg {
+  display: block;
   width: 66px;
   height: 66px;
   color: currentColor;
@@ -162,6 +165,7 @@
     top: 125px;
     left: 45px;
     right: 45px;
+    background-color: $brown;
   }
 }
 
@@ -188,6 +192,12 @@
     border-radius: 21px;
     border: 0;
   }
+}
+
+.header__grid input:hover,
+.header__grid input:active,
+.header__grid input:focus {
+  outline: 1px solid $darker-grey;
 }
 
 .header__grid input::placeholder {

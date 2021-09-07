@@ -17,7 +17,9 @@
   }
 }
 
-.link:hover {
+.link:hover,
+.link:active,
+.link:focus {
   color: $brown;
   border: 0;
 }

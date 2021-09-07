@@ -6,6 +6,8 @@
   .nav {
     padding-top: 82px;
     padding-bottom: 80px;
+    max-height: 100vh;
+    overflow-y: auto;
   }
 }
 
@@ -95,14 +97,22 @@
   }
 }
 
-.nav__item a:hover {
+.nav__item a:hover,
+.nav__item a:active,
+.nav__item a:focus {
   color: $brown;
 }
 
 @media (max-width: $width-only-tablet) {
   .nav__item a:hover,
+  .nav__item a:active,
+  .nav__item a:focus,
   .nav__list-extra a:hover,
-  .nav__list-login a:hover {
+  .nav__list-extra a:active,
+  .nav__list-extra a:focus,
+  .nav__list-login a:hover,
+  .nav__list-login a:active,
+  .nav__list-login a:focus {
     color: $darker-grey;
   }
 }

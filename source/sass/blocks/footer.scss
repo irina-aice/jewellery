@@ -89,6 +89,12 @@
   border: 0;
 }
 
+.footer__input input:hover,
+.footer__input input:active,
+.footer__input input:focus {
+  outline: 1px solid $white;
+}
+
 @media (max-width: $width-only-mobile) {
   .footer__input input {
     width: 50%;
@@ -115,7 +121,11 @@
 }
 
 .footer__input a:hover span,
-.footer__input a:hover svg {
+.footer__input a:active span,
+.footer__input a:focus span,
+.footer__input a:hover svg,
+.footer__input a:active svg,
+.footer__input a:focus svg {
   color: $brown;
 }
 
@@ -179,7 +189,9 @@
   color: inherit;
 }
 
-.footer__list a:hover {
+.footer__list a:hover,
+.footer__list a:active,
+.footer__list a:focus {
   color: $brown;
 }
 

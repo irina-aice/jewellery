@@ -3,43 +3,92 @@
     display: grid;
     grid-template-columns: repeat(4, min-content);
     grid-column-gap: 30px;
+    grid-row-gap: 20px;
     margin-top: 50px;
   }
 }
 
 .social__link {
-  display: inline-grid;
-  grid-template-columns: min-content 1fr;
-  grid-column-gap: 15px;
+  display: inline-flex;
+  align-items: center;
+  color: $white;
 
-  &--facebook {
-    grid-column-gap: 22px;
+  &--facebook::before,
+  &--instagram::before,
+  &--pinterest::before,
+  &--twitter::before {
+    content: '';
+    display: inline-block;
+    vertical-align: baseline;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
   }
+
+  &--facebook::before {
+    width: 8px;
+    height: 15px;
+    background-image: url('../img/facebook.svg');
+  }
+
+  &--instagram::before {
+    width: 15px;
+    height: 15px;
+    background-image: url('../img/instagram.svg');
+  }
+
+  &--pinterest::before {
+    width: 16px;
+    height: 15px;
+    background-image: url('../img/pinterest.svg');
+  }
+
+  &--twitter::before {
+    width: 15px;
+    height: 13px;
+    background-image: url('../img/twitter.svg');
+  }
+}
+
+.social__link:hover:before,
+.social__link:active:before,
+.social__link:focus:before {
+  transform: scale(1.1);
+  opacity: 0.5;
 }
 
 @media (max-width: $width-only-mobile) {
   .social__link {
-    grid-column-gap: 0;
+    &--facebook::before {
+      width: 12px;
+      height: 21px;
+    }
 
-    &--facebook {
-      grid-column-gap: 0;
+    &--instagram::before {
+      width: 20px;
+      height: 21px;
+    }
+
+    &--pinterest::before {
+      width: 20px;
+      height: 21px;
+    }
+
+    &--twitter::before {
+      width: 20px;
+      height: 18px;
     }
   }
 }
 
-.social__link svg {
-  color: $white;
+.social__link span {
+  display: inline-block;
+  vertical-align: baseline;
+  margin-left: 15px;
 }
 
-@media (max-width: $width-only-mobile) {
-  .social__link svg {
-    height: 21px;
-    width: auto;
-  }
-}
-
-.social__link:hover svg {
-  color: $brown;
+.social__link--facebook span {
+  margin-left: 21px;
 }
 
 @media (max-width: $width-only-mobile) {

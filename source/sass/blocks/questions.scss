@@ -105,7 +105,9 @@
   }
 }
 
-.questions__item h4:hover {
+.questions__item h4:hover,
+.questions__item h4:active,
+.questions__item h4:focus {
   cursor: pointer;
 }
 
@@ -131,7 +133,9 @@
   }
 }
 
-.questions__icon:hover {
+.questions__icon:hover,
+.questions__icon:active,
+.questions__icon:focus {
   color: $darker-grey;
   cursor: pointer;
 }

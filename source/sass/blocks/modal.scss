@@ -81,7 +81,9 @@
   }
 }
 
-.modal__close:hover .modal__close-icon {
+.modal__close:hover .modal__close-icon,
+.modal__close:active .modal__close-icon,
+.modal__close:focus .modal__close-icon {
   color: $brown;
 }
 

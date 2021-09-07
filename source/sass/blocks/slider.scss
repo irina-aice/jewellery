@@ -149,6 +149,8 @@
   }
 }
 
-.slider__arrow:hover {
+.slider__arrow:hover,
+.slider__arrow:active,
+.slider__arrow:focus {
   color: $darker-grey;
 }
