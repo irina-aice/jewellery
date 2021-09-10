@@ -23,7 +23,7 @@
   font-size: 14px;
   line-height: 21px;
   background-color: inherit;
-  color: $grey;
+  color: $darker-grey;
 }
 
 .form-modal__item input:hover,
@@ -34,6 +34,7 @@
 
 .form-modal__item input::placeholder {
   opacity: 1;
+  color: $grey;
 }
 
 .form-modal__item p {
