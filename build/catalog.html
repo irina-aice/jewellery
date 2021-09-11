@@ -86,7 +86,7 @@
   </header>
   <main class="main main--catalog">
     <div class="promo promo--catalog">
-      <div class="promo__image promo__image--catalog">
+      <div class="promo__image">
         <div class="container container--grid container--catalog">
           <h1>All jewellery</h1>
           <p>Discover picks of fashion's finest trends in our jewellery catalog</p>
@@ -470,14 +470,16 @@
             <p>News and updates from CH. <br class="footer__break-mobile">No spam, we promise.</p>
           </div>
           <div class="footer__input">
-            <label class="visually-hidden" for="mail">E-mail</label>
-            <input id="mail" type="email" placeholder="Your E-mail" required>
-            <a href="#">
-              <span>Sign Up</span>
-              <svg width="30" height="11">
-                <use xlink:href="img/sprite.svg#footer-arrow"></use>
-              </svg>
-            </a>
+            <form action="https://echo.htmlacademy.ru/" method="post">
+              <label class="visually-hidden" for="mail">E-mail</label>
+              <input id="mail" type="email" placeholder="Your E-mail" required>
+              <button type="button">
+                <span>Sign Up</span>
+                <svg width="30" height="11">
+                  <use xlink:href="img/sprite.svg#footer-arrow"></use>
+                </svg>
+              </button>
+            </form>
           </div>
         </div>
         <div class="footer__links">

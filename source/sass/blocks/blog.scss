@@ -42,6 +42,9 @@
   .blog__list {
     margin-top: 55px;
     grid-row-gap: 40px;
+    max-width: 450px;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 
@@ -113,6 +116,7 @@
 .blog__image {
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
 }
 
 .blog__image--care {

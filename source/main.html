@@ -86,7 +86,7 @@
   </header>
   <main>
     <div class="promo promo--main">
-      <div class="promo__image promo__image--main">
+      <div class="promo__image">
         <div class="container container--grid">
           <h1>Perfection</h1>
           <p>made to be yours</p>
@@ -345,13 +345,12 @@
           <div class="swiper-slide">
             <div class="product-card">
               <a href="#">
-                <!--<img src="img/dainty-gold-necklace-desktop.jpg" alt="">-->
                 <picture>
                   <source type="image/webp" srcset="img/dainty-gold-necklace-desktop.webp, img/dainty-gold-necklace-desktop@2x.webp 2x">
                   <!-- 1х: 130px; 2x: 260px -->
                   <img src="img/dainty-gold-necklace-desktop.jpg" srcset="img/dainty-gold-necklace-desktop@2x.jpg 2x"
-                       width="270" height="284"
-                       alt="Dainty gold necklace">
+                      width="270" height="284"
+                      alt="Dainty gold necklace">
                 </picture>
                 <div class="product-card__information">
                   <h4>Gold chain</h4>
@@ -363,13 +362,12 @@
           <div class="swiper-slide">
             <div class="product-card">
               <a href="#">
-<!--                <img src="img/galaxy-earrings-desktop.jpg" alt="">-->
                 <picture>
                   <source type="image/webp" srcset="img/galaxy-earrings-desktop.webp, img/galaxy-earrings-desktop@2x.webp 2x">
                   <!-- 1х: 130px; 2x: 260px -->
                   <img src="img/galaxy-earrings-desktop.jpg" srcset="img/galaxy-earrings-desktop@2x.jpg 2x"
-                       width="270" height="284"
-                       alt="Galaxy earrings desktop">
+                      width="270" height="284"
+                      alt="Galaxy earrings desktop">
                 </picture>
                 <div class="product-card__information">
                   <h4>Galaxy earrings</h4>
@@ -488,14 +486,15 @@
           <a href="#" class="link link--contacts">Follow Us</a>
         </p>
       </div>
+      <h2 class="visually-hidden">Gallery</h2>
       <ul class="gallery">
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
+        <li><div></div></li>
+        <li><div></div></li>
+        <li><div></div></li>
+        <li><div></div></li>
+        <li><div></div></li>
+        <li><div></div></li>
+        <li><div></div></li>
       </ul>
     </section>
   </main>
@@ -508,14 +507,16 @@
             <p>News and updates from CH. <br class="footer__break-mobile">No spam, we promise.</p>
           </div>
           <div class="footer__input">
-            <label class="visually-hidden" for="mail">E-mail</label>
-            <input id="mail" type="email" placeholder="Your E-mail" required>
-            <a href="#">
-              <span>Sign Up</span>
-              <svg width="30" height="11">
-                <use xlink:href="img/sprite.svg#footer-arrow"></use>
-              </svg>
-            </a>
+            <form action="https://echo.htmlacademy.ru/" method="post">
+              <label class="visually-hidden" for="mail">E-mail</label>
+              <input id="mail" type="email" placeholder="Your E-mail" required>
+              <button type="button">
+                <span>Sign Up</span>
+                <svg width="30" height="11">
+                  <use xlink:href="img/sprite.svg#footer-arrow"></use>
+                </svg>
+              </button>
+            </form>
           </div>
         </div>
         <div class="footer__links">

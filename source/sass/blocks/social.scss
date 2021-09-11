@@ -17,7 +17,7 @@
   &--instagram::before,
   &--pinterest::before,
   &--twitter::before {
-    content: '';
+    content: "";
     display: inline-block;
     vertical-align: baseline;
     background-repeat: no-repeat;
@@ -28,31 +28,31 @@
   &--facebook::before {
     width: 8px;
     height: 15px;
-    background-image: url('../img/facebook.svg');
+    background-image: url("../img/facebook.svg");
   }
 
   &--instagram::before {
     width: 15px;
     height: 15px;
-    background-image: url('../img/instagram.svg');
+    background-image: url("../img/instagram.svg");
   }
 
   &--pinterest::before {
     width: 16px;
     height: 15px;
-    background-image: url('../img/pinterest.svg');
+    background-image: url("../img/pinterest.svg");
   }
 
   &--twitter::before {
     width: 15px;
     height: 13px;
-    background-image: url('../img/twitter.svg');
+    background-image: url("../img/twitter.svg");
   }
 }
 
-.social__link:hover:before,
-.social__link:active:before,
-.social__link:focus:before {
+.social__link:hover::before,
+.social__link:active::before,
+.social__link:focus::before {
   transform: scale(1.1);
   opacity: 0.5;
 }

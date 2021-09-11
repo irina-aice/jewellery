@@ -5,7 +5,7 @@
 @media (max-width: $width-only-tablet) {
   .nav {
     padding-top: 82px;
-    padding-bottom: 80px;
+    padding-bottom: 180px;
     max-height: 100vh;
     overflow-y: auto;
   }
@@ -14,6 +14,7 @@
 @media (max-width: $width-only-mobile) {
   .nav {
     padding-top: 74px;
+    padding-bottom: 140px;
   }
 }
 
