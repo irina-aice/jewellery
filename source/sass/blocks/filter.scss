@@ -22,6 +22,11 @@
     background-color: $white;
   }
 
+  .filter__inner {
+    overflow-y: auto;
+    max-height: 90vh;
+  }
+
   .filter__form {
     position: relative;
     max-width: 423px;
@@ -49,20 +54,20 @@
   @include reset-list;
 }
 
-.filter__form > ul {
+.filter__inner > ul {
   border: 1px solid $brown;
   margin-bottom: 35px;
 }
 
 @media (max-width: $width-only-tablet) {
-  .filter__form > ul {
+  .filter__inner > ul {
     border: 0;
     margin-bottom: 38px;
   }
 }
 
 @media (max-width: $width-only-mobile) {
-  .filter__form > ul {
+  .filter__inner > ul {
     margin-bottom: 29px;
   }
 }
@@ -82,7 +87,10 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  width: 100%;
   padding: 22px 25px 22px 25px;
+  border: 0;
+  background-color: transparent;
   cursor: pointer;
 }
 
@@ -102,6 +110,12 @@
     padding-top: 28px;
     padding-bottom: 20px;
   }
+}
+
+.filter__group-title:hover,
+.filter__group-title:focus,
+.filter__group-title:active {
+  color: $brown;
 }
 
 .filter__group-title h3 {
@@ -175,7 +189,7 @@
 }
 
 .filter input[type="checkbox"] + label {
-  display: flex;
+  display: inline-flex;
   align-items: center;
   font-size: 14px;
   cursor: pointer;
@@ -207,6 +221,10 @@
 
 .filter input[type="checkbox"]:checked + label::before {
   background-color: $brown;
+}
+
+.filter input[type="checkbox"]:focus + label::before {
+  outline: 1px dashed $darker-grey;
 }
 
 @media (max-width: $width-only-tablet) {

@@ -57,6 +57,6 @@
   "dependencies": {
     "micromodal": "^0.4.6",
     "modern-normalize": "^1.1.0",
-    "swiper": "^6.8.4"
+    "swiper": "^7.0.5"
   }
 }

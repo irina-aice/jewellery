@@ -104,99 +104,101 @@
                 <use xlink:href="img/sprite.svg#filter-close" data-micromodal-close></use>
               </svg>
             </button>
-            <ul>
-              <li class="filter__group">
-                <div class="filter__group-title js-collapsible-title" role="button" aria-expanded="true">
-                  <h3>Product</h3>
-                  <svg class="filter__group-icon" width="15" height="8" fill="transparent">
-                    <use xlink:href="img/sprite.svg#arrow-down"></use>
-                  </svg>
-                </div>
-                <div class="filter__group-content js-collapsible-content">
-                  <ul>
-                    <li>
-                      <input class="visually-hidden" type="checkbox" name="product[]" id="filter-necklaces" value="necklaces" checked="checked">
-                      <label for="filter-necklaces">Necklaces</label>
-                    </li>
-                    <li>
-                      <input class="visually-hidden" type="checkbox" name="product[]" id="filter-chokers" value="chokers" checked="checked">
-                      <label for="filter-chokers">Chokers</label>
-                    </li>
-                    <li>
-                      <input class="visually-hidden" type="checkbox" name="product[]" id="filter-rings" value="rings">
-                      <label for="filter-rings">Rings</label>
-                    </li>
-                    <li>
-                      <input class="visually-hidden" type="checkbox" name="product[]" id="filter-earrings" value="earrings" checked="checked">
-                      <label for="filter-earrings">Earrings</label>
-                    </li>
-                  </ul>
-                </div>
-              </li>
-              <li class="filter__group">
-                <div class="filter__group-title js-collapsible-title" role="button" aria-expanded="false">
-                  <h3>Material</h3>
-                  <svg class="filter__group-icon" width="15" height="8" fill="transparent">
-                    <use xlink:href="img/sprite.svg#arrow-down"></use>
-                  </svg>
-                </div>
-                <div class="filter__group-content js-collapsible-content">
-                  <ul>
-                    <li>
-                      <input class="visually-hidden" type="checkbox" name="material[]" id="filter-gold" value="gold">
-                      <label for="filter-gold">Gold</label>
-                    </li>
-                    <li>
-                      <input class="visually-hidden" type="checkbox" name="material[]" id="filter-silver" value="silver">
-                      <label for="filter-silver">Silver</label>
-                    </li>
-                  </ul>
-                </div>
-              </li>
-              <li class="filter__group">
-                <div class="filter__group-title js-collapsible-title" role="button" aria-expanded="false">
-                  <h3>Collection</h3>
-                  <svg class="filter__group-icon" width="15" height="8" fill="transparent">
-                    <use xlink:href="img/sprite.svg#arrow-down"></use>
-                  </svg>
-                </div>
-                <div class="filter__group-content js-collapsible-content">
-                  <ul>
-                    <li>
-                      <input class="visually-hidden" type="checkbox" name="collection[]" id="filter-flamingo" value="flamingo">
-                      <label for="filter-flamingo">Pink flamingo</label>
-                    </li>
-                    <li>
-                      <input class="visually-hidden" type="checkbox" name="collection[]" id="filter-dreams" value="dreams">
-                      <label for="filter-dreams">Dreams</label>
-                    </li>
-                  </ul>
-                </div>
-              </li>
-              <li class="filter__group">
-                <div class="filter__group-title js-collapsible-title" role="button" aria-expanded="true">
-                  <h3>Price</h3>
-                  <svg class="filter__group-icon" width="15" height="8" fill="transparent">
-                    <use xlink:href="img/sprite.svg#arrow-down"></use>
-                  </svg>
-                </div>
-                <div class="filter__group-content js-collapsible-content">
-                  <div class="filter-range">
-                    <div class="filter-range__inner">
-                      <button class="filter-range__button filter-range__button--min" type="button">
-                        <span class="filter-range__tooltip">$ 55</span>
-                      </button>
-                      <button class="filter-range__button filter-range__button--max" type="button">
-                        <span class="filter-range__tooltip">$ 155</span>
-                      </button>
+            <div class="filter__inner">
+              <ul>
+                <li class="filter__group">
+                  <button class="filter__group-title js-collapsible-title" type="button" aria-expanded="true">
+                    <h3>Product</h3>
+                    <svg class="filter__group-icon" width="15" height="8" fill="transparent">
+                      <use xlink:href="img/sprite.svg#arrow-down"></use>
+                    </svg>
+                  </button>
+                  <div class="filter__group-content js-collapsible-content">
+                    <ul>
+                      <li>
+                        <input class="visually-hidden" type="checkbox" name="product[]" id="filter-necklaces" value="necklaces" checked="checked">
+                        <label for="filter-necklaces">Necklaces</label>
+                      </li>
+                      <li>
+                        <input class="visually-hidden" type="checkbox" name="product[]" id="filter-chokers" value="chokers" checked="checked">
+                        <label for="filter-chokers">Chokers</label>
+                      </li>
+                      <li>
+                        <input class="visually-hidden" type="checkbox" name="product[]" id="filter-rings" value="rings">
+                        <label for="filter-rings">Rings</label>
+                      </li>
+                      <li>
+                        <input class="visually-hidden" type="checkbox" name="product[]" id="filter-earrings" value="earrings" checked="checked">
+                        <label for="filter-earrings">Earrings</label>
+                      </li>
+                    </ul>
+                  </div>
+                </li>
+                <li class="filter__group">
+                  <button class="filter__group-title js-collapsible-title" type="button" aria-expanded="false">
+                    <h3>Material</h3>
+                    <svg class="filter__group-icon" width="15" height="8" fill="transparent">
+                      <use xlink:href="img/sprite.svg#arrow-down"></use>
+                    </svg>
+                  </button>
+                  <div class="filter__group-content js-collapsible-content">
+                    <ul>
+                      <li>
+                        <input class="visually-hidden" type="checkbox" name="material[]" id="filter-gold" value="gold">
+                        <label for="filter-gold">Gold</label>
+                      </li>
+                      <li>
+                        <input class="visually-hidden" type="checkbox" name="material[]" id="filter-silver" value="silver">
+                        <label for="filter-silver">Silver</label>
+                      </li>
+                    </ul>
+                  </div>
+                </li>
+                <li class="filter__group">
+                  <button class="filter__group-title js-collapsible-title" type="button" aria-expanded="false">
+                    <h3>Collection</h3>
+                    <svg class="filter__group-icon" width="15" height="8" fill="transparent">
+                      <use xlink:href="img/sprite.svg#arrow-down"></use>
+                    </svg>
+                  </button>
+                  <div class="filter__group-content js-collapsible-content">
+                    <ul>
+                      <li>
+                        <input class="visually-hidden" type="checkbox" name="collection[]" id="filter-flamingo" value="flamingo">
+                        <label for="filter-flamingo">Pink flamingo</label>
+                      </li>
+                      <li>
+                        <input class="visually-hidden" type="checkbox" name="collection[]" id="filter-dreams" value="dreams">
+                        <label for="filter-dreams">Dreams</label>
+                      </li>
+                    </ul>
+                  </div>
+                </li>
+                <li class="filter__group">
+                  <button class="filter__group-title js-collapsible-title" type="button" aria-expanded="true">
+                    <h3>Price</h3>
+                    <svg class="filter__group-icon" width="15" height="8" fill="transparent">
+                      <use xlink:href="img/sprite.svg#arrow-down"></use>
+                    </svg>
+                  </button>
+                  <div class="filter__group-content js-collapsible-content">
+                    <div class="filter-range">
+                      <div class="filter-range__inner">
+                        <button class="filter-range__button filter-range__button--min" type="button">
+                          <span class="filter-range__tooltip">$ 55</span>
+                        </button>
+                        <button class="filter-range__button filter-range__button--max" type="button">
+                          <span class="filter-range__tooltip">$ 155</span>
+                        </button>
+                      </div>
                     </div>
                   </div>
-                </div>
-              </li>
-            </ul>
-            <div class="filter__button-wrapper">
-              <button class="button button--apply" type="submit">Apply</button>
-              <button class="button button--outline" type="reset">Clear All</button>
+                </li>
+              </ul>
+              <div class="filter__button-wrapper">
+                <button class="button button--apply" type="submit">Apply</button>
+                <button class="button button--outline" type="reset">Clear All</button>
+              </div>
             </div>
           </form>
         </div>
