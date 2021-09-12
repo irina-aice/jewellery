@@ -4,13 +4,19 @@ html {
 
 body {
   min-height: 100%;
-  display: grid;
-  grid-template-rows: auto 1fr auto;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
   font-family: "Poppins", "Tahoma", sans-serif;
   font-weight: 500;
   font-size: 16px;
   line-height: 130%;/* or 21px */
   color: $darker-grey;
+}
+
+main {
+  flex: 1 0 auto;
+  width: 100%;
 }
 
 a {
