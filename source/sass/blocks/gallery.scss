@@ -2,8 +2,6 @@
   @include reset-list;
   margin-top: 63px;
   display: grid;
-  //grid-template-columns: 1fr max-content 1fr 1fr;
-  //grid-template-rows: auto auto;
   grid-template-columns: minmax(133px, 4fr) minmax(231px, 7fr) minmax(133px, 4fr) minmax(133px, 4fr);
   grid-column-gap: 27px;
   grid-row-gap: 34px;
@@ -45,7 +43,6 @@
 .gallery li:nth-child(7n+1) {
   grid-row-start: 1;
   grid-row-end: 2;
-  //height: 230px;
 }
 
 .gallery li:nth-child(7n+1) div {
@@ -73,15 +70,10 @@
   .gallery li:nth-child(7n+5) div {
     padding-top: 65%;
   }
-
-  .gallery li:nth-child(7n+3) div {
-    padding-top: 185.7%;
-  }
 }
 
 @media (max-width: $width-only-tablet) {
   .gallery li:nth-child(7n+1) div {
-    //height: 133px;
     background-image: url("../img/gallery-square-earrings-tablet.jpg");
 
     @media (min-resolution: 2dppx) {
@@ -91,7 +83,6 @@
 }
 
 .gallery li:nth-child(7n+2) {
-  //height: 150px;
   grid-row-start: 2;
   grid-row-end: 3;
 }
@@ -106,7 +97,6 @@
 
 @media (max-width: $width-only-tablet) {
   .gallery li:nth-child(7n+2) div {
-    //height: 87px;
     background-image: url("../img/gallery-many-jewelleries-tablet.jpg");
 
     @media (min-resolution: 2dppx) {
@@ -117,15 +107,12 @@
 
 @media (max-width: $width-only-mobile) {
   .gallery li:nth-child(7n+2) {
-    //height: 87px;
     grid-column-start: 1;
     grid-column-end: 2;
   }
 }
 
 .gallery li:nth-child(7n+3) {
-  //width: 399px;
-  //height: 412px;
   min-width: 231px;
   grid-row-start: 1;
   grid-row-end: 3;
@@ -144,8 +131,6 @@
 
 @media (max-width: $width-only-tablet) {
   .gallery li:nth-child(7n+3) div {
-    //width: auto;
-    //height: 240px;
     background-image: url("../img/gallery-woman-with-jewellery-tablet.jpg");
 
     @media (min-resolution: 2dppx) {
@@ -160,6 +145,7 @@
   }
 
   .gallery li:nth-child(7n+3) div {
+    padding-top: 185.7%;
     background-image: url("../img/gallery-woman-with-jewellery-mobile.jpg");
 
     @media (min-resolution: 2dppx) {
@@ -193,7 +179,6 @@
 
 @media (max-width: $width-only-mobile) {
   .gallery li:nth-child(7n+4) {
-    //height: 87px;
     grid-column-start: 1;
     grid-column-end: 2;
     grid-row-start: 3;
